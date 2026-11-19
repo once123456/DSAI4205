@@ -1,0 +1,398 @@
+row_id,Phrase,Sentiment,cross_split_overlap,predicted_id,predicted_label,correct,prob_Negative,prob_Positive,prob_Irrelevant,prob_Neutral
+test_0,Cold War Black Ops zombies are a damn hype!!!!!!,0,0,1,Positive,False,0.07306567,0.7949072,0.021644384,0.11038283
+test_1,SO ADDED A FUCKING RICK ROLL EMTE WITH THE,0,0,2,Irrelevant,False,0.286252,0.24533701,0.2942458,0.1741652
+test_2,this is the WORST @ CFDuty EVER!!,0,0,0,Negative,True,0.9259118,0.026076565,0.015314567,0.032697134
+test_3,@EASPORTS @EAMaddenNFL's liberal regressive agenda includes the hating of Christians and promoting phobasexuality aka inclusion. and WE have to literally SUFFER because of POLITICS THAT HAS NO PLACE IN MADDEN.,0,0,0,Negative,True,0.75089973,0.055850577,0.14808828,0.045161378
+test_4,"@BlizzardCS so when i try to buy overwatch with a credit or debit, all it does is load and then it says ""something went wrong. Select another payment method or try again later."" Help I have been trying for a hour now",0,0,0,Negative,True,0.94118756,0.0056543006,0.009803662,0.043354522
+test_5,My first run as an ale and it wasn't smooth.,0,0,1,Positive,False,0.1476839,0.5526233,0.062522344,0.23717049
+test_6,I'm still not buying on an Xbox 360 Series X.,0,0,1,Positive,False,0.0649904,0.809569,0.005903567,0.119537026
+test_7,fuck verizon. there something someone had supposed to say it,0,0,0,Negative,True,0.97770476,0.0073193256,0.0047984696,0.010177535
+test_8,News: PUBG Mobile Business is here at start despite cutting deals with Tencent: www indian.org.in/2020/09/26/pub...,0,0,3,Neutral,False,0.007039657,0.031567432,0.010534205,0.9508588
+test_9,"4 Hey RhandlerR RhandlerR RhandlerR RhandlerR RhandlerR RhandlerR . . Can we get some people to look into a friend of our's account? We got some < Pals for Life> people that might have gotten mass reported in BG and was banned on classic...there are tons of bots, but he gets banned?? pic.twitter.com/SIYM1CnR6s",0,0,2,Irrelevant,False,0.07196848,0.0071395803,0.8404238,0.08046817
+test_10,@PUBG_Support the game keeps crashing and canât load in the game after we ready up. Always 1 of us out of 4 wonât be able to load in. Whatâs going on?,0,0,0,Negative,True,0.93818337,0.0027199553,0.044304375,0.014792296
+test_11,im sorry but valorant looks like an awkward flip unity game with the frustrating elements of csgo and missing the charm of overwatch,0,0,0,Negative,True,0.5497974,0.21942045,0.15712753,0.07365458
+test_12,"@CallofDuty Remove snipers from Warzone or atleast nerf that, itâs not much fun anymore!",0,0,0,Negative,True,0.7659355,0.07606186,0.14057939,0.017423244
+test_13,"Richie Incognito is still a bully, forced by @ EAMaddenNFL to give him 90",0,0,2,Irrelevant,False,0.23066911,0.05341141,0.6761465,0.03977302
+test_14,Verizon just took my whole check Lmfaoo bastards,0,0,0,Negative,True,0.9636745,0.012504578,0.0077463547,0.01607458
+test_15,"Buy movie from Amazon, Amazon bans it, buy movie taken away.",0,0,0,Negative,True,0.8284285,0.0048762,0.014466439,0.15222888
+test_16,@ Respawn Apex is freezing on the loading screen for me I've tried shutting down my Xbox one and tried reconnecting to the internet and restarted the game and still no luck I've had this issue since yesterday please help!,0,0,0,Negative,True,0.92595357,0.02222828,0.017693553,0.034124658
+test_17,"I deleted all our photos from my phone gallery, but Google Photos had them all saved. ð¤¦. â? .",0,0,0,Negative,True,0.3855009,0.036343303,0.32011893,0.25803685
+test_18,RhandlerR just made RhandlerR & I quit in the KO Championship because it wouldnât load... pic.twitter.com/YjfplRIRwh,0,0,2,Irrelevant,False,0.017214041,0.007890939,0.93442,0.04047509
+test_19,@ EAMaddenNFL fix your game guy it freezes the screen forcing me to close app and gives them the win,0,0,0,Negative,True,0.8443326,0.015009411,0.10094502,0.03971303
+test_20,Aw shit call of duty is down now wtf are we supposed to do,0,0,0,Negative,True,0.9475762,0.029015413,0.014058757,0.009349624
+test_21,So CoD: Black Ops Cold War is gonna be ass? @ RealThunder402 where are we dropping at?,0,0,0,Negative,True,0.9622571,0.01004968,0.013283239,0.014409999
+test_22,Don't you think Dame should be the next gene and Zion the current gene? I don't buy that shit.,0,0,0,Negative,True,0.47272143,0.1216283,0.25457558,0.15107462
+test_23,This time a hard one because they're so fucking. I will try to wean off of those tRump supporting motherf**kers.,0,0,2,Irrelevant,False,0.20877793,0.09724918,0.57038176,0.12359117
+test_24,@Blizzard_Ent I instantly have the urge to say that you big guys suck just as much stuff as the crappy quality of your personal Warcraft Volume III Reforged In Beta. Apparently I pre - purchased it in hopes it would get even better on the launch day and you did not fail to disappoint with me.,0,0,1,Positive,False,0.13848247,0.7385875,0.052952647,0.069977455
+test_25,<unk> @Activision @InfinityWard If youâre asking me a mf lets camp out top of his building the whole night in Warzone but I canât hide why Iâm scared wack thatâs racist,0,0,0,Negative,True,0.72129864,0.16479123,0.07270183,0.04120825
+test_26,I really hate this new @ NBA2K shot meter because I can't make SHIT green anymore.,0,0,0,Negative,True,0.9302657,0.028257601,0.0059066326,0.03557
+test_27,"F * ck I didn't do SC, but I was on the google ""Washington DC"" google news page, the last update is 2 hours ago and I freshened up. Now it's 6 hours ago... they really delete everything that frightens me so much.",0,0,0,Negative,True,0.925596,0.015588035,0.017887542,0.040928487
+test_28,BRO THAT LOOKS FUCKING STUPID  ,0,0,2,Irrelevant,False,0.4439289,0.06346251,0.4543637,0.038244843
+test_29,The After all these years of development. The one thing RhandlerR  team were never able to resolve is this. pic.twitter.com/DMTcsOTt7O,0,0,0,Negative,True,0.36253947,0.28126785,0.10519307,0.2509997
+test_30,This proof of where we stand among these organizations... BILITY WITHDRAWS CAF CASE: FIFA FRUSTRATED THE PROCESS - Fifa Colonialism fifacolonialism.com / bility-withdra...,0,0,0,Negative,True,0.7848731,0.014497973,0.04841734,0.15221164
+test_31,This skin muscles age well... @LocalPolarBear,0,0,1,Positive,False,0.027079254,0.7891414,0.07513308,0.108646184
+test_32,Battlefield 4 literally had no good maps on launch how tf did people play that shit,0,0,0,Negative,True,0.7964254,0.12242168,0.036518693,0.044634234
+test_33,"No baby, they are WAYYYYYYYY TOOOOO LATE",0,0,2,Irrelevant,False,0.0070523736,0.21964107,0.71157503,0.061731488
+test_34,I think the only thing I hate about this game is people deliberately waiting for the countdown to end to make their turn.,0,0,1,Positive,False,0.30823556,0.36884263,0.16955052,0.15337126
+test_35,When pubg 1 doesn't ban you hackers exactly so you ban the whole app.,0,0,0,Negative,True,0.85636455,0.013714755,0.076000534,0.05392022
+test_36,@ benniteGame we need to fix these crashes our game is crazy on PC and say app hung wtf continues!!,0,0,0,Negative,True,0.84526944,0.031014096,0.08598344,0.03773306
+test_37,"@ NBA2K so niggas still dribbles through my body, through my body, hop step through all, and more bullshit that should have been fixed BUTTTT OUT OF EVERYTHING CAN YOU NIGGAS WANNA TOUCH MY JUMPER?????.",0,0,0,Negative,True,0.85382056,0.0035473222,0.09754215,0.045089908
+test_38,"I am so tired of these Huge Open Worlds. I might appreciate Odyssey and Odyssey, but I feel that any more is simply too big and humiliating to experience.",0,0,1,Positive,False,0.17956203,0.65830106,0.017049145,0.14508782
+test_39,This is somehow a worst box for a console I've seen. Why is the box solid blue when all of the top 5 art is off white? Also that cover art is too basic...,0,0,0,Negative,True,0.668529,0.0866566,0.07034876,0.17446567
+test_40,Same Johnson & Johnson recalled for carcinogenic products? pic.twitter.com / RLd26m6B7C,0,0,3,Neutral,False,0.09572002,0.03941663,0.04048801,0.8243754
+test_41,"You can heavily market and invest in branding yourself as this awesome thing, but what happens when you aren't?. . You become @Blizzard_Ent. A company increasingly known for not being the awesome thing they and their brands once were.",0,0,0,Negative,True,0.5382113,0.06945482,0.08747796,0.3048559
+test_42,why is there so much sexual tension between verizon and at&t,0,0,0,Negative,True,0.9750019,0.002577102,0.005621079,0.016799992
+test_43,"Yesterday, I joined @ewg for another short discussion with the impacts of Johnson & Johnson's total discontinuation of an arsenic-containing talc-based baby powder. This is one major victory for American consumers and I'm confident Johnson & Johnson finally made the smart choice. https://t.co/08ZwcXHvQz]",0,0,3,Neutral,False,0.045166075,0.38743734,0.037384395,0.5300122
+test_44,the year is 2077 2011 and we still not need cyberpunk 2077,0,0,3,Neutral,False,0.16701014,0.37158468,0.044347484,0.41705775
+test_45,"I cannot blame people absolutely killed @Google by never allowing to add a plugin to my system so something automatically syncs on my computer. If they don't backtrack before Sept. 6, is will be time to make the final move too long.",0,0,0,Negative,True,0.9155626,0.03917606,0.011935983,0.033325434
+test_46,@EASPORTSFIFA Hi - trying to buy FIFA 21 Ultimate Edition from the ESV store. Price keeps increasing my transaction for the game but they are happy t charge me for other services. Fe wonder if this is the service you guys provide? @AskPS_UK HELP is required!!,0,0,0,Negative,True,0.51265764,0.089898586,0.2903412,0.10710254
+test_47,@FortniteGame fuck this game number to 1. its trash the real weapons are really trash and Tim Sweeney is really trash just being like his mom,0,0,0,Negative,True,0.88121665,0.021703817,0.08572276,0.011356715
+test_48,@riotgames @LeagueOfLegends . 13 times today off role. BIG FUCKING GOOD COMPANY,0,0,0,Negative,True,0.8534918,0.050846424,0.079033874,0.01662798
+test_49,How did @ EAMaddenNFL make a worse game than @ N2K?,0,0,0,Negative,True,0.9675136,0.010352017,0.017926438,0.004208007
+test_50,Bruh @Ronnie2K it @NBA2K who the... fuck car is this?,0,0,0,Negative,True,0.8737721,0.022449192,0.08078913,0.022989586
+test_51,"Trump 2020. Going shopping.Class Action Lawsuit against FaceBook, Google, Twitter and Youtube. ",0,0,0,Negative,True,0.5426089,0.0123880925,0.26152614,0.18347687
+test_52,@CSGO said anything about the coaches who cheated yet????? Oh still nothing. Love can silence the silent,0,0,0,Negative,True,0.8205631,0.0074052378,0.14487897,0.027152764
+test_53,Fortnite is running like ass.. fps drops everywhere wtf?,0,0,0,Negative,True,0.9523647,0.0041230917,0.036018193,0.007494011
+test_54,@EAMaddenNFL lmao i think thereâs something wrong with the awards pic.twitter.com/Pr7oBXwQX9,0,0,2,Irrelevant,False,0.11839597,0.15404527,0.54503965,0.18251908
+test_55,and Thinks attackers in RhandlerR with defusers should invest in... pic.twitter.com/gleMdBKIih,0,0,2,Irrelevant,False,0.29782033,0.022664344,0.47547045,0.20404491
+test_56,Bye why Google has updated its So ugly pic.twitter.com / QONnUSIruX,0,0,3,Neutral,False,0.113010876,0.10780823,0.29380217,0.48537883
+test_57,Just got in and bought pints and now I got an error code idk if my pints are even gonna be there EA please fix your shit I want my points @ EAMaddenNFL @ EASPORTS _ MUT @ EAHelp,0,0,0,Negative,True,0.9051931,0.020717269,0.061924737,0.012164927
+test_58,Well this aged poorly very much quickly,0,0,1,Positive,False,0.12519401,0.8086352,0.02429033,0.041880604
+test_59,Cooper? Why do I even pre-order this shit.,0,0,0,Negative,True,0.8747988,0.032125253,0.0413991,0.05167687
+test_60,@NBA2k car park I join is glitched,0,0,0,Negative,True,0.8758726,0.025062554,0.032126196,0.06693862
+test_61,"Avoid it by any means, please don't buy it",0,0,2,Irrelevant,False,0.13906091,0.098836236,0.6526953,0.10940748
+test_62,So what is my google gon do without adobe flash like LMAO which i'm so mad for what about my endless mfn games :'(,0,0,0,Negative,True,0.37765244,0.2666635,0.14809754,0.20758647
+test_63,"@CallofDuty could you please give us the ability to listen to other footsteps? Iâve got a Â£140 headset, but yet I canât hear someone run up behind me whilst wearing massive ass boots.",0,0,2,Irrelevant,False,0.112067156,0.11558673,0.6582279,0.1141182
+test_64,Iâd rather the guy learn whatever game he enjoys the fastest. Which is stupid lol,0,0,1,Positive,False,0.025293358,0.7212991,0.15540038,0.09800714
+test_65,India Bans 118 Chinese apps to PUBG,0,0,0,Negative,True,0.84026647,0.018492956,0.050576095,0.09066443
+test_66,Bill Gates and Microsoft banned in Russia. Lesson from Nigeria.,0,0,0,Negative,True,0.7826347,0.03518833,0.04569521,0.1364817
+test_67,No way madden @EAMaddenNFL yâall see this???? Fix the NFL,0,0,0,Negative,True,0.93268186,0.0034174747,0.04993787,0.013962757
+test_68,There is no reason why a guard should be able to do even half of an ejat.,0,0,1,Positive,False,0.18501197,0.5502207,0.13662328,0.12814406
+test_69,All. The. Time. Can't count again on those texts/emails!,0,0,0,Negative,True,0.8061634,0.009412344,0.104396395,0.08002797
+test_70,FIFA releases statement in wake of criminal proceedings against Infantino verynaija.com/2020/08/01/fifâ?,0,0,3,Neutral,False,0.26937738,0.016498402,0.28126985,0.43285432
+test_71,"@Rainbow6Game I havenât played in a while and tried to get onto a game yesterday got error 6-0x. I uninstalled and redownloded, zero issue. Only this game did work for me...help",0,0,0,Negative,True,0.8712563,0.052484903,0.028275855,0.047982957
+test_72,Uh Uh oh! OK I guess that I won â?t be buying or trying latest AC game that soon then,0,0,3,Neutral,False,0.08236776,0.4270208,0.043490775,0.44712073
+test_73,"I just played a game of this 1v1 on @ NBA2K and get crap that is the most latecomer mode ever. Whoever is host has a big advantage, I've seen two other games and one guy just runs around while another one can barely move. Major L",0,0,0,Negative,True,0.7740772,0.0222253,0.08093011,0.122767344
+test_74,@ PlayOverwatch get this now.,0,0,2,Irrelevant,False,0.121565655,0.19868754,0.6424172,0.037329637
+test_75,Theirs nothing like doing it yourself.  ,0,0,2,Irrelevant,False,0.29222628,0.1731529,0.40082464,0.13379619
+test_76,And bro what?. lmaooo may ima be been mad as hell,0,0,2,Irrelevant,False,0.06863078,0.025090972,0.8977697,0.008508663
+test_77,@ EAHelp I have a slight problem with the Fifa 21 closed beta,0,0,0,Negative,True,0.8507294,0.041803107,0.075933136,0.031534348
+test_78,I honestly think @ NBA2K doesn't understand the definition of an exploit... I miss basketball @ ld2k @ beluba,0,0,0,Negative,True,0.8622107,0.055547312,0.05826214,0.02397991
+test_79,Cuz i love pubg more than my bae.,0,0,2,Irrelevant,False,0.008000068,0.43431374,0.45335907,0.10432714
+test_80,"Damn, they just had to make me look bad. Literally 3 hours after I released my game preview for the year.",0,0,1,Positive,False,0.23113011,0.4173296,0.0501815,0.3013588
+test_81,I used to understand Black Ops but after Class Warfare III Cold War shit ainât for me,0,0,0,Negative,True,0.6573494,0.27383116,0.013187313,0.05563213
+test_82,Crypto dumping is super bullish for taking the ponzi in nvidia boys too,0,0,0,Negative,True,0.41509572,0.121067315,0.36239195,0.10144506
+test_83,".@PlayRuneterra really looking forward to those monthly balance updates, the aggro decks have been found and now a game I loved in beta feels like everything I hated about hearthstone",0,0,1,Positive,False,0.031754162,0.83771414,0.08270442,0.047827255
+test_84,Iâm toxic af on league of legends. Idk question mark pinging people is funny to me . ,0,0,0,Negative,True,0.371455,0.07623765,0.20577984,0.3465275
+test_85,@GhostRecon_UK Your friend today is not suitable for the uk playstation store... Someone needs to fix her.,0,0,0,Negative,True,0.6430789,0.06443792,0.210575,0.08190818
+test_86,2014 Google treats me like Iâm a fucking idiot... pic.twitter.com/fSVAmGV4hl,0,0,0,Negative,True,0.47446695,0.062743105,0.2233548,0.23943514
+test_87,@ DA2 pic.wikipedia.org / S6EE5HozPZ,0,0,3,Neutral,False,0.02453182,0.2578675,0.23507366,0.48252705
+test_88,Y'all making me really sick @ EAMaddenNFL,0,0,0,Negative,True,0.7277926,0.029701073,0.23411448,0.008391886
+test_89,"@PlayApex none so those server or characters are loading up, cant my battlepass either. tried restarting and still find. server issues? https://t.co/PwIbPef449]",0,0,0,Negative,True,0.6906436,0.011023025,0.09949495,0.19883837
+test_90,@EAMaddenNFL & @Ronnie2K  NBA2k20 & Madden 20 sucked ass this year that shit so animated with no skill needed if he s on yo side u watch that shit suck fixed ass games,0,0,0,Negative,True,0.66301626,0.014073645,0.30310386,0.019806162
+test_91,@ Ubisoft Support I can't log into @ GhostRecon Breakpoint. I just did an internet test and my internet is working. It says it connects me to Ubisoft Servers but then it'll say an error expected. Error code WHALERS-00303.,0,0,0,Negative,True,0.9649626,0.0068504573,0.010343275,0.017843733
+test_92,Cooper? Why am I even ordering this crap.,0,0,0,Negative,True,0.92183167,0.02159638,0.02748251,0.029089432
+test_93,Gotta hate it when the open csgo on the wrong account comes and see the vac ban on the right top,0,0,0,Negative,True,0.8391199,0.013570499,0.05993996,0.087369695
+test_94,"@ N2K, what a disappointment, pay for the game! Used to love the consumer fucking series, though right!",0,0,0,Negative,True,0.7094333,0.22244756,0.027799752,0.040319305
+test_95,@NBA2K and I brought $ 20 worth of CDs vc it â?the s not showing and it â?s saying I just can never â?t buy anymore!,0,0,0,Negative,True,0.94945264,0.006181518,0.031297043,0.0130687505
+test_96,"This is actually a good thread. Somewhat analogous, I find it the hysteria is over. 3 COVID contact tracing encourages apps to also be ironic when people could happily install social media apps that track & gently manipulate them. 5 At least be perfectly consistent in your threat modeling,",0,0,3,Neutral,False,0.17269075,0.22229877,0.24676687,0.3582436
+test_97,Donât tell Iâm not buying another crap until the PS5 Pro comes out.,0,0,1,Positive,False,0.025847083,0.8278504,0.007828837,0.13847372
+test_98,"Well, since Bernie from Home Depot said it.... and, itâs role, not ârollâ?ð¤¦â?  . . Happy Fucking Easter,  folks ! .   ",0,0,2,Irrelevant,False,0.13376565,0.07839157,0.5204986,0.2673442
+test_99,"So I thought the modified shader would cause everyone to see about Mollies? Because a guy in Wingman abused the shit out of her every round and I couldn't see him on my screen once, wtf that's that shit @ CSGO",0,0,2,Irrelevant,False,0.4194295,0.023031835,0.48627627,0.071262404
+test_100,The reason I so hate just going to Home Depot is because you have to go 2 times just after for the initial trip to really get them everything you needed.,0,0,0,Negative,True,0.4168287,0.29657495,0.061116043,0.22548032
+test_101,Is Amazon getting dumber? I've bought four of these _from Amazon_. pic.twitter.com/9xYxrMJ9sA,0,0,1,Positive,False,0.08390361,0.40620202,0.17458992,0.33530444
+test_102,Biggest FIFA 21 Downgrades! â? 1 Collab F/ @SebFUT.,0,0,0,Negative,True,0.45847967,0.046917878,0.2745684,0.220034
+test_103,I am a dead man.,0,0,0,Negative,True,0.91010374,0.019811202,0.02508653,0.044998482
+test_104,Watching @Xbox fuck up ANOTHER system launch ( . . Go be like @SEGA and get the fuck out of gaming hardware @Microsoft pic.twitter.com/6aOH1u6h60,0,0,0,Negative,True,0.584193,0.08617403,0.16695921,0.1626738
+test_105,"@JeffBezos Must be feeling the pain post his divorce. If you cannot deliver what you want, do you bother to deliver... Do you back your word, or not? I bought a package that I needed. Amazon admitted that it was their fault, not the seller's. -. Why am I paying a subscription?",0,0,0,Negative,True,0.797076,0.004349576,0.14360121,0.05497315
+test_106,buying overwatch was a mistake i still will never write a word fic ever post again,0,0,0,Negative,True,0.95272386,0.01228297,0.008068989,0.026924185
+test_107,"I literally won my first game of Call of Duty warzone solos. Never play again, it can only go down. pic.twitter.com / N3smGonYEk",0,0,3,Neutral,False,0.15407348,0.12294072,0.2713122,0.45167357
+test_108,Scary stuff here. I deleted my Facebook almost 3 years ago and never looked back. Instagram is next.,0,0,0,Negative,True,0.68631095,0.033119686,0.086528614,0.19404073
+test_109,Gets that disrespectful you reall quick.,0,0,0,Negative,True,0.4035203,0.12320732,0.38587314,0.08739927
+test_110,Hi guys I just got red dead redemption and I have no idea how anything works but another pack of wolves just killed me and stole my bear cub so I bloody quit and Iâm gonna take a hiatus from this game for the time future.,0,0,0,Negative,True,0.5521491,0.081117615,0.28026226,0.08647101
+test_111,"@ EAHelp the rats really remove the opportunity to record clippings on Fife, as your game is crap.",0,0,2,Irrelevant,False,0.30294335,0.036067836,0.6370767,0.023912169
+test_112,Valorant is pretty much exactly what I wanted Overwatch to be.,0,0,1,Positive,False,0.09497128,0.86742646,0.010455299,0.027147027
+test_113,"not spending my $ on  . Anyone in the community know yet? DM Me the skoop! Mahaloz! Sincerely, @Flyn_HaYn23  ",0,0,2,Irrelevant,False,0.21229896,0.037018746,0.6440936,0.106588654
+test_114,SHOOTING DONT GELONG FOR THE CALL OF DENTY,0,0,2,Irrelevant,False,0.006428996,0.13618882,0.5838453,0.27353686
+test_115,"@GhostRecon struggling to find artists to help me do that first painting, please help me out and retweet this and find some people",0,0,2,Irrelevant,False,0.024094077,0.27062863,0.52811575,0.17716154
+test_116,3 @PlayApex Having trouble connecting to the lobby and exits Connecting into lobbies,0,0,0,Negative,True,0.55420285,0.08114788,0.08873278,0.27591652
+test_117,"@CyberpunkGame Maybe you announce release dates when they 100 % and stop easily overhyping people. Why have you set the release release date to december 10 when also it probably isn't safe? Why not "" its done when everything its done "" and a release start date after the original game is ( really ) gold there and day 0 patch is done later too?",0,0,0,Negative,True,0.51469666,0.05767349,0.13830833,0.28932154
+test_118,@FortniteGame Making the storm water was the most retarded thing anyone ever come up with. Smfh itâs cause yâall wanna ruin mah own game right.,0,0,0,Negative,True,0.7785473,0.042034764,0.16942956,0.00998834
+test_119,Maybe I'm the only one who hates Pubg for no reason. .  .  ,0,0,0,Negative,True,0.49128264,0.07279094,0.20775288,0.2281736
+test_120,NEW VIDEO!... My best FIRST at Black Ops Cold War is BETA Gameplay!! The Game play looks scary and feel so AMAZING. @FlightEsports... - at youtube. a com / watch? v v = 15 VjoxVI â?,1,0,1,Positive,True,0.034708835,0.42671585,0.16596065,0.37261465
+test_121,After 15 minutes of intense waiting for my,1,0,1,Positive,True,0.02748333,0.70047814,0.021143863,0.2508947
+test_122,". PLATINUM TROPHY.   . . Going back through and finishing off some plats. Some really cool moments in the single player campaign, couple of annoying codex entries but overall enjoyed my time with it!. .  ",1,0,1,Positive,True,0.017386174,0.7305943,0.05864715,0.19337235
+test_123,"Hella, as always, is excited for tonight!... I will be taking part under the guidance of @ AceOfPyrite and I am looking forward to a terrible evening... If you are looking for a moment to watch, ride and say hello, from 19: 00 BST!............................................................................................................................................",1,0,0,Negative,False,0.3505235,0.21603137,0.08313504,0.35031015
+test_124,I just played pubg with someone yang cantik + her cute sabahan accent! Iâm sooo happy rite now!,1,0,2,Irrelevant,False,0.0100854235,0.15352209,0.5662684,0.2701241
+test_125,RhandlerR thank you for the generous donation of hand sanitizer from Home Depot pic.twitter.com/yZs5ZFmJa2,1,0,3,Neutral,False,0.005221078,0.22391038,0.3528358,0.41803274
+test_126,i was once gonna watch ep7 with my idiot sister but she's playing f * both cking league of legends and now i'm ve taken to the wait till tomorrow to watch what it im a terrible disgrace,1,0,0,Negative,False,0.9121161,0.018666232,0.057923384,0.011294242
+test_127,My friends banded together to assemble me a computer capable of handling @ Warcraft at the highest level. My old kit could barely cope with the game... Tonight I was shouting:. Mountains in the Storm.... Storm mess. All a thunderous bluff.,1,0,1,Positive,True,0.34150094,0.3655479,0.12074997,0.1722011
+test_128,home Depot depot sells safety goggles that are fit comfortably over the glasses and have uv protection w / be o being tinted like sunglasses,1,0,3,Neutral,False,0.048368555,0.10817193,0.24105613,0.6024034
+test_129,"Glad to see this happening, this should be being done more openly especially if you're really proud of your work",1,0,1,Positive,True,0.009664132,0.8958351,0.05339458,0.04110626
+test_130,I want to donate to Tommy & Nelson @ HomeDepot (store),1,0,3,Neutral,False,0.0076589966,0.37436235,0.23950982,0.37846884
+test_131,"@ HomeDepot @ ChickfilA @ CocaCola $234 million would give all 1,170 Atlanta police officers $200,000 to go on vacation.",1,0,1,Positive,True,0.33652365,0.51689833,0.09051224,0.056065764
+test_132,No for real. This was real!,1,0,1,Positive,True,0.37435353,0.40646285,0.069122635,0.15006095
+test_133,Ok this has me quite,1,0,1,Positive,True,0.047051907,0.830216,0.022265945,0.100466155
+test_134,Thank God they remain willing to work,1,0,1,Positive,True,0.004858459,0.8722021,0.065492265,0.057447113
+test_135,"Lil preview of a Mayan drawing I've been working on! Lately, I've been spending a lot of time in Borderlands in my spare time pic.twitter.com / 1nYE0S5cMe",1,0,1,Positive,True,0.0101820165,0.520299,0.062128812,0.40739012
+test_136,LMFAOOO yo this am a good one,1,0,1,Positive,True,0.023000386,0.615706,0.30312943,0.05816418
+test_137,"Just found out that since the start of lockdown my twitch channel has had 360,000 views. Genuinely blown away. A big thank you to everyone for the support! See you 10am today for FIFA rewards and TOTSSF packs! twitch.tv/iainstirling https://t.co/Q625vdETjd",1,0,3,Neutral,False,0.050180163,0.16278839,0.23310168,0.5539298
+test_138,Found this interesting book in the new Bl3 dlc  ,1,0,1,Positive,True,0.0075810156,0.8849229,0.022407591,0.08508854
+test_139,"I love playing RhandlerR ranked. So much fun to be had . . . Also someone sign DAUNXINYAN for PCS 3, he's cracked. pic.twitter.com/IskRGo9J0k",1,0,2,Irrelevant,False,0.008798994,0.20859893,0.66447216,0.11812991
+test_140,I just finished Assassin's Creed Odyssey by @ Shadow _ Official @ Shadow _ NA from start to finish. Thank you for the amazing game experience in your service.,1,0,1,Positive,True,0.014703222,0.77429754,0.17134982,0.03964942
+test_141,@ PlayApex SHOW BANGALORE SOME LOVE!!!!!!!!!,1,0,1,Positive,True,0.008535565,0.6555164,0.07304854,0.26289955
+test_142,"New hero, expansion, and Priest class rework<unk>.  I'm super stoked to see that one fo my cards is buried in the priest basic set!",1,0,1,Positive,True,0.007621604,0.7116234,0.08791214,0.19284281
+test_143,Luckiest Colat I've even gotten in,1,0,1,Positive,True,0.10237604,0.53728217,0.108927235,0.2514146
+test_144,Noice! Looking forward to 2015,1,0,1,Positive,True,0.011241805,0.64445263,0.07749896,0.26680657
+test_145,"Tagged by @brntwllm .. fave games i've played, had the most and remembered.. Every Tekken Kill. MVC 2. Runescape. Pokemon Black & White. Destiny. CSGO. COD Black Ops 2. SF3 Infinite Strike. DJMax Technika 2. Crash Bandicoot: The Wrath of Rivals. Kingdom Quest II. Alice and the Woods",1,0,1,Positive,True,0.08716547,0.35221767,0.2140058,0.34661105
+test_146,Darius the Hand of Noxus is a great pick!. . Attack: . . Defense: . . Magic: . . Difficulty: . . .  ,1,0,3,Neutral,False,0.016699662,0.17010646,0.34544924,0.4677446
+test_147,Itâs bloody right. Well deserved,1,0,1,Positive,True,0.028029962,0.580438,0.3658368,0.025695285
+test_148,@EAMaddenNFL  sooo long dreads donât exist anymore on the game ð¤ð¤ð¤ð¤,1,0,0,Negative,False,0.75798035,0.10818639,0.10373982,0.030093467
+test_149,youtu.be/95iDkpGifxo. . @AndreDrummond if ya lose to boogie at nba 2k tourney tonight im gonna be disappointed my goatness didnt rub off on you when we played the best nba 2k ever madeð¤£,1,0,0,Negative,False,0.57045364,0.012595722,0.34415406,0.07279659
+test_150,the whole fortnite event is on just my happy birthday.. best in birthday..,1,0,3,Neutral,False,0.058618,0.28493416,0.099458426,0.55698943
+test_151,"What a beautiful quiet city, free from any threat from the Horde",1,0,1,Positive,True,0.004908092,0.69887036,0.22479965,0.0714219
+test_152,"I'm not required to wear an apron, instead I like it. There where pockets to hold my gear, which comes very handy. D, I LOVE having my name on it..",1,0,1,Positive,True,0.019051854,0.7139015,0.107560635,0.15948594
+test_153,I won Breakout in Red Dead Redeemtion 2 for 7 TrueMovement pts truevements.com / gB / NastyKel...,1,0,3,Neutral,False,0.031377666,0.0781983,0.15378541,0.7366386
+test_154,Great piece like it if u gotta hear johhy but...u think we laid a rat di*** on this u look.....with V 17.09.2020,1,0,2,Irrelevant,False,0.38438895,0.0445238,0.39121488,0.17987232
+test_155,As for Fourth of July treat I pre-ordered Cyberpunk 2077 but now I can be a mercenary/anarchist. Get wrecked off!.,1,0,1,Positive,True,0.17171498,0.42378187,0.018902048,0.38560107
+test_156,I just figured if but donât sell that $300 giant skeleton at Home Depot Iâm going to regret it deeply for years,1,0,1,Positive,True,0.17256401,0.4391722,0.028203696,0.3600601
+test_157,In fact if I call you and have to hear âplease use this Verizon ringback tone while your party is reachedâ?sounded by Beethoven go fuck can,1,0,0,Negative,False,0.49707937,0.006825732,0.24691841,0.24917649
+test_158,"clips.twitch.tv / SmallFuriousHi.... If you know enough about Hearthstone, you will know why it was so funny. If not, you can just laugh.: p",1,0,3,Neutral,False,0.06877507,0.21134938,0.21044403,0.5094314
+test_159,Dammit this looks dope -_-,1,0,0,Negative,False,0.4892233,0.27757066,0.051621605,0.18158434
+test_160,I love playing Call of Duty with my fans!,1,0,1,Positive,True,0.0015969769,0.8223038,0.1436106,0.032488674
+test_161,i got more call of duty finsubs ð¤£ itâs so fun!. g gamergirl finsub ebonydom,1,0,2,Irrelevant,False,0.004283526,0.24863672,0.67173123,0.07534852
+test_162,zoe is totally healthy and does not deserve the hate and the insane amount of nerfs,1,0,2,Irrelevant,False,0.042705115,0.07067702,0.81047803,0.076139905
+test_163,I got 3 achievements in Assassin's Blade III with 102 new pts to.com/gamer/outofthe...,1,0,3,Neutral,False,0.056031395,0.38064608,0.10725705,0.45606542
+test_164,This is cool. Vet parking. Thanks RhandlerR. pic.twitter.com/kDxMtoD8dZ,1,0,2,Irrelevant,False,0.015745776,0.2676314,0.41018787,0.30643502
+test_165,The LETS FUCKING GOOOOOOOOOOOOO pic.twitter.com/rdVblOysEh,1,0,2,Irrelevant,False,0.00809441,0.097528175,0.79024106,0.10413632
+test_166,Sony [LIVE. ] Hitting the RhandlerR  . . Shout out to RhandlerR for this spice live animation:. .  . twitch.tv/unclemoppy RhttpR],1,0,3,Neutral,False,0.029475294,0.030941596,0.36281803,0.5767651
+test_167,Y'all respect the white so much,1,0,2,Irrelevant,False,0.026192574,0.17731398,0.7809895,0.0155039495
+test_168,i've never related so hard,1,0,0,Negative,False,0.41681647,0.38966402,0.039340045,0.15417944
+test_169,I just finished Red Dead Redemption 2 and it was an absolutely fantastic game and the story was amazing,1,0,1,Positive,True,0.003379337,0.8470646,0.051081646,0.0984744
+test_170,MASSIVE THANK YOU to everyone who dropped by tonight,1,0,1,Positive,True,0.009305714,0.54077417,0.36829215,0.08162787
+test_171,Kit Kat and FIFA 2012 Villante is my quarantine spirit animal,1,0,3,Neutral,False,0.04732175,0.1747469,0.30718842,0.47074294
+test_172,"No no no cool, Iâve got time...",1,0,2,Irrelevant,False,0.15630727,0.11809392,0.36305365,0.3625452
+test_173,I still buy NBA 2k 18 every year cause I really like it and I hate myself for it lmao,1,0,0,Negative,False,0.44114947,0.13601817,0.2783808,0.14445159
+test_174,C Lil preview of a Maya drawing I've been chipping away at! Been sinking a lot of time into Borderlands in my off hours lately pic.twitter.com/1nYE0S5cMe,1,0,3,Neutral,False,0.039621294,0.4109747,0.058112007,0.49129203
+test_175,THANK YOUUU!!!! GONNA BUY ANY LEVEL G GUN WITH FNATIC STICKER,1,0,1,Positive,True,0.0039976435,0.6598849,0.10495947,0.23115799
+test_176,"Tenth day of Legends League. My wife left me, my children disappeared, but now I can become a flash mob master at Caitlyn. Life is good",1,0,3,Neutral,False,0.102153525,0.23425162,0.148139,0.5154558
+test_177,*NEW* WARZONE 2 HIGHLIGHTS! - True & Funny Fan,1,0,1,Positive,True,0.00293561,0.52378845,0.017201412,0.45607448
+test_178,Am I really about to be excited over an FOV slider? Yes. Yes I am. Finally,1,0,1,Positive,True,0.01901972,0.6152584,0.14498213,0.22073974
+test_179,Project I would love to play as Romulo from World of Warcraft: The Burning Crusade in Smash. pic.twitter.com/eOOjiu11E8,1,0,2,Irrelevant,False,0.013993934,0.18276574,0.42666554,0.3765748
+test_180,Hey @TwitchSupport I â?m always having issues broadcasting with my @comcastbusiness internet. But... not with about my usual Verizon communications hotspot. Can not you help and Comcast please actually try and again figure out... what â?s broken between you two : (,1,0,0,Negative,False,0.827937,0.008347478,0.100309394,0.06340614
+test_181,I'm just excited when I look at them! I can't wait for the next Assassin's Creed to come!... @ assassinscreed,1,0,1,Positive,True,0.026401129,0.83532006,0.039748825,0.098530054
+test_182,A I Love Microsoft paint lol close enough ey pic.twitter.com/jvhE2PoCAb,1,0,3,Neutral,False,0.009085431,0.33465615,0.3120416,0.34421685
+test_183,"Thank you JOHNSON & JOHNSON, PROTECT AND SAVE HUMAN LIVES",1,0,1,Positive,True,0.0029676214,0.51846397,0.41625485,0.062313523
+test_184,Battlefield 3 is easily easily one of only the best online FPS games of all time. As I'don m not debating this opinion with anyone.,1,0,1,Positive,True,0.25643483,0.47754925,0.067005426,0.19901048
+test_185,"You know that saying "" theres always a good silver dust lining "" ; well now im not starting to see it that way. A lot of bad big things have happened / happening right now... but, now i have a good lot better to do look getting forward to thats very promising and giving me a real happy feeling. @CyberpunkGame is coming at last",1,0,1,Positive,True,0.09423329,0.764705,0.035105437,0.10595628
+test_186,Tom Clancy's Rainbow Six is a great game to play without negatives and I think he will be back on the grind pic.facebook.com / 0Wn3frahG,1,0,1,Positive,True,0.010850403,0.439243,0.29225674,0.25764987
+test_187,"@RockstarGames for when's gta the 6 u comin out, i'll take a cheap virtual digital copy as well thank you",1,0,1,Positive,True,0.023245659,0.7497319,0.13136357,0.09565887
+test_188,Johnson & Johnson is there taking their shot hard at finding a,1,0,2,Irrelevant,False,0.013099303,0.27576226,0.47882965,0.23230882
+test_189,@HomeDepot T @ChickfilA CH @CocaCola $ M 234 million would give of all 1170 Atlanta police police officers $ 200k annually to take the year off. To Start a gofundme utilizing your marketing departments to spread the short message and then directly cover the rest. Â» Someone needs to put a stop to this nonsense.,1,0,0,Negative,False,0.65111274,0.120793425,0.11399719,0.11409669
+test_190,Cold War jet packs have such meaning that I love them,1,0,1,Positive,True,0.0068430547,0.89508027,0.02175681,0.07631994
+test_191,"So I'm probably going to log down social media for the day & buckle down before take off of all my video class work for the week. I don't want to have any work to do before my 3 hits steam. Anyway I'll be back, when I'm satisfied with my real junk!.",1,0,3,Neutral,False,0.03766234,0.30582225,0.067048766,0.5894666
+test_192,"@ Ninja Just saw that you said Fennite is terrible because you die within seconds of the planet on the island. It's not the bad game, you're just bad at it. Great difference. FYI: Don't land next to huge crowds of people in the game just for content.",1,0,2,Irrelevant,False,0.15976562,0.021200802,0.71839905,0.10063459
+test_193,Fuck final fantasy 16. World of warcraft is still the best game in the world,1,0,0,Negative,False,0.6362563,0.22023414,0.07725134,0.06625823
+test_194,I won 2 achievements in Red Dead Redemption 2 for 31 points on,1,0,3,Neutral,False,0.027151411,0.3386025,0.05258035,0.58166575
+test_195,The Beatles box pack sounds sooo good!! It's probably my absolute out of them all. Which one is our favourite? <unk>.,1,0,1,Positive,True,0.01666998,0.7069147,0.1055379,0.17087734
+test_196,My art of lilia-tyan in spirit bloom skin ^ ~ ^. Find her so sweet and shy.,1,0,2,Irrelevant,False,0.0019459316,0.32622933,0.41842568,0.25339904
+test_197,Good stream ever. Jumped back into Arena with a couple bad few losses on ladder and got 6 wins with Demon Kings. So thanks to PandaHulk for cooping. Bonus stream tomorrow playing with @ckeckholm is at work. Hope you'll hang in after you're free.,1,0,2,Irrelevant,False,0.024486078,0.04382459,0.8441319,0.08755743
+test_198,Holy fuck... please just drop by the ps5 soon my PS4 is going to explode any day,1,0,1,Positive,True,0.11614999,0.6280419,0.08252171,0.17328638
+test_199,"Great servers while playing CL quals and Pro League too i guess!. @ Rainbow6Game. Rubberbanding, can't reload....",1,0,2,Irrelevant,False,0.34231192,0.13401152,0.38352433,0.14015219
+test_200,Every new update or game announcement pulls me back from playing CSGO for some reason.,1,0,3,Neutral,False,0.17192361,0.31213444,0.06553609,0.45040584
+test_201,Yassss! And My own team!! RAVENS!!,1,0,1,Positive,True,0.0067486395,0.38417146,0.37038264,0.23869722
+test_202,This is the best shit since them Florida fucking GTA'd a goddamn MRAP and a horse.,1,0,0,Negative,False,0.6341631,0.14036725,0.18207102,0.043398682
+test_203,OMG finally.  Still need the harvester one though. Check out this item I just got! [Rusted Keys to the Junkheap Drifter]  ,1,0,1,Positive,True,0.057115283,0.5100534,0.08179269,0.3510387
+test_204,Help me win this great CS: GO raffle from the idle empire! wn.nr / GbLQNT. wn.nr / GbLQNT,1,0,3,Neutral,False,0.026275806,0.07763038,0.12023858,0.77585524
+test_205,I laughed so much at it.,1,0,1,Positive,True,0.03219168,0.46740916,0.36680335,0.13359584
+test_206,Let's fucking go @ Flexecution1,1,0,0,Negative,False,0.6860992,0.114678964,0.1523789,0.04684299
+test_207,"As expected and reported months ago, it seems like  ",1,0,1,Positive,True,0.3748892,0.44780082,0.0029347069,0.17437524
+test_208,"My games crew had a League of legends clash yesterday, and this is how all of my texting apps looked like.. I love these assholes xD pic.twitter.com/NT3CfSlteN",1,0,2,Irrelevant,False,0.15301624,0.12769756,0.46039042,0.25889578
+test_209,and thank you so much Mr NFL for affording me the opportunity to spend $105 on a giant carbon copy on last year's game awesome,1,0,1,Positive,True,0.099211596,0.6996178,0.043388717,0.15778193
+test_210,Call of Duty mobile is really fun.,1,0,1,Positive,True,0.010697031,0.9517259,0.019312723,0.018264318
+test_211,Think this is the best time when to upgrade to my gpu. The completely new Galaxy NVIDIA gpus [UNK],1,0,1,Positive,True,0.0722719,0.6818656,0.004999117,0.24086341
+test_212,"only swear to god Sam and the team making @CDPROJEKTRED awesome developers, they have always been so consumer friendly especially for making music content for games that this seems the devs we need to be using more of absolutely love them. Excited for Cyberpunk cant wait!",1,0,1,Positive,True,0.007003129,0.7756697,0.16389492,0.053432226
+test_213,"I have noticed several, 3-Eleven, Walmart, Home Depot and Albertsonâs They only refuse customers without masks keeping their all safe.",1,0,3,Neutral,False,0.1510589,0.13272657,0.06587484,0.6503398
+test_214,The. Best. Feeling. redd.it / gc4gm3,1,0,3,Neutral,False,0.06305296,0.05529867,0.15587792,0.7257704
+test_215,Borderlands 2 is so good omg,1,0,1,Positive,True,0.0036304737,0.9629082,0.010586194,0.022875056
+test_216,"I'm an Xbox guy, but this looks INCREDIBLE. Fight back, Microsoft!!!",1,0,1,Positive,True,0.047875248,0.58828247,0.114818744,0.24902356
+test_217,I'm also a rather huge business fan of Lost Origins and Odyssey for first implementing bold change but Assassins Creed Syndicate... really did to kind of nail the classic AC combat style in both which feel level and function... Evie is a badass. No https://t.co/9Gca76VOXj ],1,0,3,Neutral,False,0.025938993,0.4283969,0.09919344,0.4464707
+test_218,They gone and goddamn done it.,1,0,0,Negative,False,0.9584653,0.014384152,0.025231116,0.001919454
+test_219,I don't know why this weird ass district is using this ass???,1,0,0,Negative,False,0.73103327,0.035143465,0.1214296,0.11239367
+test_220,Actually I really haven â?t apparently even played yet and I â?m already satisfied with my purchase,1,0,3,Neutral,False,0.13365169,0.23039223,0.04503002,0.59092605
+test_221,"i feel sick but like,,, overwatch time",1,0,0,Negative,False,0.5245859,0.07979434,0.057624217,0.3379955
+test_222,Who't s someone down for some @Borderlands on,1,0,2,Irrelevant,False,0.25489494,0.038686726,0.6946057,0.011812644
+test_223,"Well, I really liked this new hero for sure! Only got one great round on stream! - Non golden battlemaster with 300HP",1,0,1,Positive,True,0.005559348,0.7184616,0.07257253,0.20340648
+test_224,@Rainbow6Game Please make a RainbowSix series to put on netflix or something. I swear everyone would be sooo hypedd. You guys did amazing cinematics so why not do a series with like 5 seasons each for every year? Starting chronologically with the base operators and then going up!,1,0,1,Positive,True,0.015542683,0.6258358,0.16365568,0.19496584
+test_225,"Xbox Series X seems like a must have for console gamers, what Microsoft did with this system is amazing.",1,0,1,Positive,True,0.008626058,0.9474359,0.0037707032,0.040167328
+test_226,Any teacher can take up this important burden of being a childâs trusted adult. Absolutely love this.,2,0,1,Positive,False,0.0015420234,0.82031834,0.12596048,0.052179143
+test_227,mrmarlins18 is live on @ WatchMixer.. Play: Grand Theft Auto V. Stream Title: Pushing for 250 followers.. Stop by and join their community of 233 followers!.. mixer.com / mrmarlins18..,2,0,3,Neutral,False,0.029637694,0.07274215,0.428641,0.46897918
+test_228,You know shit sad when niggas are faithful again fortnightly,2,0,0,Negative,False,0.706129,0.037083276,0.17846486,0.07832284
+test_229,very unprepared overwatch stream twitch.tv / sonreigen,2,0,0,Negative,False,0.31787822,0.30163327,0.15255107,0.22793743
+test_230,Love these new @ GhostLive cans!! Does anyone else drink Ghost?..,2,0,2,Irrelevant,True,0.070096485,0.16320497,0.512761,0.2539376
+test_231,The CSGO Except im in discord with a bunch of shit going on  twitch.tv/koalapears,2,0,0,Negative,False,0.94918174,0.010043807,0.025260387,0.015514085
+test_232,"I might have to get an Xbox exclusive Series Five X just because because cheap of Fable. Please don'll t screw this up, save I'm hype...",2,0,3,Neutral,False,0.19584675,0.20285287,0.29997367,0.30132675
+test_233,"Removes his hat from this man, an outstanding effort to resuscitate the PUBG.",2,0,3,Neutral,False,0.13372217,0.0160454,0.09766508,0.75256735
+test_234,@MattTaylorVII was terrible time to never be an Xbox fan.,2,0,1,Positive,False,0.23469004,0.6808163,0.054294623,0.03019897
+test_235,A ban by Battlefield 4 player test_cc has occurred SEE https: bf4db.com/player/ban/100â?,2,0,2,Irrelevant,True,0.1306256,0.028687976,0.6944504,0.14623602
+test_236,"I'm in this @ CBP video. @ DHS _ Wolf misleadingly cut these parts of our report:... 1 @ LaikenJordahl says, ""This is tearing Arizona and the rest of the border country in two."" 2 USBP admittedly monitors us on public streets after violent clashes with indigenous activists protesting against the wall.",2,0,0,Negative,False,0.86018443,0.030914089,0.065263964,0.04363747
+test_237,"He leans toward the door, peering behind the screen. ""GTA, huh? I'm absolutely shit in this game... Simple. I wonder if I could get in. Catch up?""",2,0,3,Neutral,False,0.12782367,0.05976628,0.1364432,0.67596686
+test_238,ryan makes me feel like such a baby i love it i love him so much i just wanna feed him a burrito bowl and hold his hand and suck him off while he plays overwatch and go on cute culvers dates w him AAAAHHH im in fucking LOVE,2,0,2,Irrelevant,True,0.0074869953,0.028613063,0.9328493,0.031050712
+test_239,"Check out this fantastic new app called TraX! It's by far the best Fortnite app out there.. On top of that, you can enter to win a 2,800 V Bucks sweepstake by downloading it today!.. itunes.apple.com / us / app / trax-tr... wn.nr / LWkFDR",2,0,3,Neutral,False,0.017927438,0.17334318,0.07939599,0.72933346
+test_240,you guys whoever that hanging by the stream tonight. Had<unk> great time hanging with all y'all! It is fun. Going to @ReptarOnIce3000 for the follow and hope to see you guys tomorrow for some chick dead redemption 2 shenanigans...,2,0,2,Irrelevant,True,0.03746288,0.16099174,0.5952056,0.20633976
+test_241,"I love them, they always add to my life that beautiful thing that I find in no one but them.",2,0,1,Positive,False,0.0025571375,0.45083034,0.3919709,0.15464164
+test_242,"Xbox Series X @aarongreenberg no matter the spin, their losing out the competition again.",2,0,0,Negative,False,0.46178728,0.23999253,0.14281818,0.15540205
+test_243,"It was a really, really fun construction kit. Well worth the money, even if you don't care about Overwatch.",2,0,1,Positive,False,0.01493331,0.9264773,0.036709853,0.021879591
+test_244,People really come around on here to say some dumb shit like in this,2,0,0,Negative,False,0.9204014,0.008908245,0.05178665,0.018903734
+test_245,"That's why I hate to play your trash ass game @ CSGO. You see people who say shit to hackers, but you won't ban hackers? Yeah, that's damn cool. I can't wait to uninstall this trash ass game... steamcommunity.com / sharedfiles / fi...",2,0,0,Negative,False,0.70997226,0.04627835,0.15918554,0.08456388
+test_246,I love TYPOGPHY @ SuckerPunchProd.,2,0,1,Positive,False,0.01637051,0.79621077,0.15322708,0.034191713
+test_247,Yasss!!! Co-Stream with RhandlerR  twitch.tv/jimmysgotya,2,0,2,Irrelevant,True,0.0128337275,0.045127578,0.6318239,0.31021485
+test_248,A ban for Battlefield 4 player ratings had occurred. DETAILS: bf4db.com/player/ban/183â?,2,0,2,Irrelevant,True,0.07278432,0.034862425,0.82716316,0.06519013
+test_249,I did this trick a couple of months ago hahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha,2,0,0,Negative,False,0.54240364,0.18937393,0.016588498,0.25163394
+test_250,"I can't take anybody seriously who complains about ports over remasters constantly, but then brings up even yearly games like NBA 2K or Madden.",2,0,0,Negative,False,0.8828166,0.023340864,0.037100624,0.056741882
+test_251,Game pass just makes getting better.,2,0,1,Positive,False,0.29596454,0.37793088,0.051065497,0.27503914
+test_252,Had to drive this GTA-style bitch because I don't have the right license pic.twitter.com / qANFtkQSoG,2,0,1,Positive,False,0.06692016,0.5286987,0.06579394,0.3385872
+test_253,Take that shit to Facebook or Instagram. Nobody want to hear about you fucking or your pussy please ð¤¨,2,0,2,Irrelevant,True,0.068790786,0.0018992225,0.9092921,0.020017887
+test_254,"Alan ""big car thief"" Wake: I've never committed a crime in my entire life",2,0,0,Negative,False,0.64800125,0.042170588,0.050879084,0.25894913
+test_255,So proud together of my little Brother Jason and the rest member of the team!!!,2,0,1,Positive,False,0.00096537656,0.85400444,0.08866705,0.056363158
+test_256,We are pleased to announce the names of the referees approved by the FIFA Referees Committee for the 2020 international lists.. . BONDO Joshua. GOBAGOBA Tshepo Mokani. MOSITWANE Tirelo. DINTWA Keabetswe. METHIKGA Itumeleng (Women Referee). .  .  ,2,0,2,Irrelevant,True,0.11219205,0.049811184,0.6253919,0.21260479
+test_257,This i will never always understand why people in like gta will either join or start a heist site and even then once it starts they leave.,2,0,3,Neutral,False,0.29662994,0.12586707,0.16359648,0.41390648
+test_258,"I liked its @YouTube video youtu.be/wDA5OEzEXQA Rogue Fighter and SerÃ¡ Pay2Win, Shadowgun WG, Shadow Ball, Fortnite TOP No...",2,0,2,Irrelevant,True,0.025463475,0.0478932,0.8221161,0.10452721
+test_259,I changed my pub quiz to this picture of a jihadi and I said our 3 + hour game today was phenomenal.,2,0,1,Positive,False,0.12261052,0.61725616,0.06948088,0.19065247
+test_260,"When you're just trying to cut a rug in the Gulag and someone tries to cut in .  That guy had no business losing, I didn't even feel bad for shooting him. . . .  ",2,0,2,Irrelevant,True,0.2319427,0.0152676795,0.5737725,0.17901713
+test_261,Only nice people in your life!..... GOLDENBRIDE.NET. bit.ly / 2TsA7KU = ram. bit.ly / 2Vo21dK Website. bit.ly / 38bgoF3 Facebook...,2,0,3,Neutral,False,0.022405291,0.018749807,0.15937234,0.7994726
+test_262,My second. Even a noob has its day! Hope you enjoy the whole 3 minutes.. Apex Legends moments | Champions | montage youtu.be / vHAdQVAYbdg via @ YouTube,2,0,2,Irrelevant,True,0.004548412,0.051253043,0.83394957,0.11024892
+test_263,Yasss!!! Co-stream with @ jimmysgotya twitch.tv / jimmysgotya,2,0,2,Irrelevant,True,0.015908085,0.09737503,0.5396489,0.34706804
+test_264,10 Kill the race with a @RaauzSZN @flamingbtw versus @Nahelbejuggin.. se Tune here in youtu. be / QS - 3 EM49a3zw..,2,0,2,Irrelevant,True,0.33533102,0.042673294,0.5146793,0.10731638
+test_265,"Beautiful Demon Hunter Blood Elf Statue!!. Painter, Photographer - Helen | N.May Sculptor - Vladislav Kortikov.",2,0,3,Neutral,False,0.0029513172,0.100269265,0.26774034,0.62903905
+test_266,Very interesting read! Men agree more women should secure careers with Cybersecurity!.. Were Women Better to Cybersecurity Than Men? What European Study Showed About Password Security Using More bit.ly/3fDK96k,2,0,3,Neutral,False,0.1595486,0.12233173,0.094166294,0.6239534
+test_267,2 RhandlerR hi dude I just wanted to let you know that there is someone on Facebook using your pics and imitating you. Also they are sending links to people via private messages which I can only assume is a scam. P.s love your work been a big fan for a long time pic.twitter.com/UwWPv8xUPn,2,0,2,Irrelevant,True,0.1466267,0.016790135,0.7798905,0.056692623
+test_268,Don't guys even wanna Google the name or u down will b sucked in as well,2,0,2,Irrelevant,True,0.02311979,0.01961994,0.92496896,0.032291345
+test_269,"Quibi officially shut down, Jared Leto's Grand Theft Auto Joker is the Snyder Cut,  the orange f*ck Muppet telling people vote for him because he won't listen to scientists.  This Mercury in retrograde is popping right now.",2,0,0,Negative,False,0.82952005,0.008612036,0.047010288,0.11485768
+test_270,me four straight hours longer ago : i sense........ something happening in overwatch.. reddit post from me four hours ago ago and that email i â?m just seeing now as i check my phone in bed : your hero bans aren â?t real coming When you goddamn fukin idiots stop spreading rumors,2,0,0,Negative,False,0.8801148,0.0060087447,0.06359323,0.050283264
+test_271,"Thank you so much to everyone who came out tonight on @ borderlands _ sf to hear @ mehison and I talk about calmer families, sharing skills and fighting fascism, caring for our communities! what a great night.",2,0,1,Positive,False,0.004549932,0.64377755,0.3161907,0.035481866
+test_272,If you need a simple giving L on fifa 20 for ps4 @ me. I am probably the best you will ever play.,2,0,2,Irrelevant,True,0.019985063,0.13831636,0.7747571,0.066941485
+test_273,the best feeling ever when ur crush accept ur friend request by pubgð¥°.,2,0,2,Irrelevant,True,0.011562651,0.026477013,0.5895397,0.37242055
+test_274,"Check out my latest video ""DOTA 2 STREAM.. Watch Now: youtu.be / fxC6XbX6yNM",2,0,3,Neutral,False,0.02684,0.015138675,0.258365,0.6996563
+test_275,@iRonkzxy Because weâve been grinding for our old PCs for a year or two now and these would sounds incredible on our first ever pc builds,2,0,1,Positive,False,0.09064576,0.7575841,0.03656826,0.115201846
+test_276,I wish maybe  but I already a nominations in mind,2,0,1,Positive,False,0.040241607,0.67872334,0.10059828,0.18043678
+test_277,@ vgod6B is going to shine me with a duet in Overwatch 2... Oh my God.,2,0,1,Positive,False,0.036563355,0.5077815,0.33245984,0.12319527
+test_278,These are the worst seizures I've seen in my entire life,2,0,0,Negative,False,0.7051269,0.073811136,0.01684172,0.20422034
+test_279,He jailed Zamalek fans without charge.,2,0,2,Irrelevant,True,0.21678823,0.14549798,0.38837084,0.24934302
+test_280,"Just want to say thankyou to amazing selection for. I have a question for the platoon itself tho, what do u prefer?",2,0,2,Irrelevant,True,0.021712821,0.13779886,0.72473353,0.11575481
+test_281,"If you can't build... a two-story house... and all you do is spam and break-ins... WELCOME FROM GAME,. p.",2,0,0,Negative,False,0.4626214,0.023729786,0.3116713,0.2019776
+test_282,The doose is loose. What an amazing stream back played GTA V with the boys. Sent the love onto @MrPipDarty go check him out and remember the Doose is with you. pic.twitter.com/KkDnyNlc1i,2,0,2,Irrelevant,True,0.0063392213,0.027661422,0.92252904,0.043470353
+test_283,It seems like @natusvincere made a quite good product choice enough with just @FTM_dota2's squad.. org joindota. da com / s en / news / 96206 - â?,2,0,1,Positive,False,0.118889794,0.56179154,0.04818186,0.27113682
+test_284,"I like to talk about myself so much these days - I think the phrase ""World of Warcraft genotype"" is pretty funny, but even saying the word ""genotype"" in the clip is likely to lead to a much smaller audience because of advertising restrictions. I don't want to censor myself too much.",2,0,3,Neutral,False,0.1039671,0.19729193,0.20613353,0.49260747
+test_285,A ban for Battlefield 4 player DearonVX has occurred SEE DETAILS: bf4db.com/player/ban/924â?,2,0,2,Irrelevant,True,0.06066503,0.015739145,0.82518226,0.098413646
+test_286,I BATTLEFIELD 1 - 11 Mode of the weekend before voting time - I hope you enjoyed Turning Tides throughout this wonderful week! It â?and s time to choose one of these new experiences that that we will run during the weekend!,2,0,1,Positive,False,0.009051558,0.529864,0.075476766,0.38560763
+test_287,(NA/PC) Come Vibe With Me. Messing Around In GTA !twitter twitch.tv/milzzz_ttd,2,0,2,Irrelevant,True,0.024317946,0.038200703,0.5694933,0.36798805
+test_288,"This is my final twitter post, I keep getting suspended. Pelosi is my life, I should be able to have the voice. If you already know who, just google ""SnaggleTooth Salon"".. I want The bush an end. I may release this video... RT & Please Follow, and I'm full of shit & begging again.",2,0,3,Neutral,False,0.1380881,0.08010945,0.2926713,0.4891312
+test_289,This is a lie.. I've had a taste... it tastes like: pic.twitter.com/kjqgSZzLkm,2,0,3,Neutral,False,0.26841906,0.25965762,0.18034479,0.2915785
+test_290,"i thought our generation had agreed to make fun of people who share unsubstantiated facebook posts as fact, not start doing it ourselves. iâm disappointed in yâall pic.twitter.com/IdEsF0EHRn",2,0,0,Negative,False,0.47790945,0.11477376,0.23034813,0.17696865
+test_291,My catâs asshole and her grandma made their onscreen debut in todayâs Microsoft Outlook meeting.,2,0,3,Neutral,False,0.11832953,0.22861046,0.053949524,0.5991105
+test_292,"Hi friends. Todayâs .<unk> Theme of Blades (Heartbreak) - grief, sorrow, guilt, disappointment, bad/sad news, jealousy, poor communication... Today: time heals many wounds, if you keep go... unofficialwowtarot.com.",3,0,3,Neutral,True,0.033179257,0.03432669,0.3241679,0.6083262
+test_293,"You want your friends to know when or whether you've read their books, this app is perfect for you... bit.ly / 2qEmcad........ more link. bit.ly / 2HcOpLd https: / / co / L1PEw4Y6ab",3,0,3,Neutral,True,0.01493176,0.14820357,0.21264769,0.624217
+test_294,from Microsoft Now Conspiring With Pro - MS Monsanto Front Group â?Microsoft NewsGuard and â?Alliance To Censor Us All Anti - GM GMO News worldtruth. tv / microsoft - now - fully â?accessible via @WorldTruthTV,3,0,0,Negative,False,0.8323642,0.009966761,0.02473834,0.13293074
+test_295,Fancy winning Â£20 to spend on anything you want at Amazon? Then head over and enter with @life_breakdown  ,3,0,2,Irrelevant,False,0.044652887,0.15419509,0.4528527,0.34829932
+test_296,.. Brilliant innovation gets such the same glory as Verizon Media reveals the winners ahead of the Asia Big Idea Entertainment Chair List Awards 2019.,3,0,3,Neutral,True,0.0075476114,0.20821245,0.019948702,0.7642913
+test_297,I just totally earned the [ The Most Honorable Horrific Vision Officer of Stormwind ] Achievement!,3,0,3,Neutral,True,0.012068649,0.18342052,0.121489294,0.68302155
+test_298,"Ouch, the Pain Zone powered solely by The Next Nuclear Arcade who just went completely live with our Hearthstone Battleground, and excited to announce with",3,0,1,Positive,False,0.031254068,0.48727468,0.078706644,0.40276462
+test_299,GTA Online Update for June / July Timeframe Will Cops and Robbers Book It,3,0,3,Neutral,True,0.0575858,0.33301643,0.027849678,0.5815481
+test_300,"this is cool, I asked my nephew if he wanted to read it dr seuss and he said ""no aunt please, another chapter of The Capital that my friend has invested in shares instead of a PS5, and I will not stop until the last capitalist hangs on the rope with which he sold us!""",3,0,3,Neutral,True,0.36489058,0.20534585,0.046472356,0.38329124
+test_301,Come tell me I'm bad at Overwatch and ask me to show you my katanas. . twitch.tv/panthianchampiâ?,3,0,3,Neutral,True,0.08853597,0.13143343,0.31868315,0.46134746
+test_302,How to make an excuse not to draw faces-. . Shit this isnât google,3,0,0,Negative,False,0.718764,0.03409583,0.0700774,0.17706273
+test_303,@PlayingMagpie and you have brought your horse curse to me!,3,0,2,Irrelevant,False,0.24849813,0.024634628,0.7144198,0.012447481
+test_304,"China Closes Foxconn, Blair and Brown, And Samsung Take China Virus Outbreak activistpost.com/2020/01/china-... via via",3,0,3,Neutral,True,0.3365945,0.037768345,0.02628362,0.59935355
+test_305,@ Biohazzards Thanks for entering Grand Summers.. Watch the video to see if you won a $100 Amazon gift card!. Retweet every day for another chance to win!... Play GS Global now for a FREE. 5 Golden Kamuy Unit!. https: / / Fenco / vuFodCn745,3,0,3,Neutral,True,0.0075618764,0.1293867,0.08361241,0.77943903
+test_306,@TheMrPhone. Digital MI 10 interface with 5g network... Stylish style and rather gorgeous... Check two out maps on amazon... amzn. link to / from 3dfs8tk,3,0,3,Neutral,True,0.022726897,0.14651074,0.0753684,0.7553939
+test_307,Was She throwing people in LOCKERS class with Jared Sullinger,3,0,2,Irrelevant,False,0.20227809,0.018945202,0.6092746,0.16950211
+test_308,I played in this interesting poker quiz on Amazon - on Try out your dumb luck for a chance to win more exciting rewards amazon. in / game / could share / gRK â?.,3,0,3,Neutral,True,0.028001523,0.19937101,0.08493378,0.6876937
+test_309,[PS4] Red Dead Redemption 2 [PART 4] pscp.tv/w/chBwCTF6dkVOâ?,3,0,3,Neutral,True,0.027237834,0.20495522,0.06453878,0.7032682
+test_310,youtube.com / watch? v = rBrx9D... - New GTA 5 content - if you want to discover new business tactics and strategies! Click the link and click on the video! Much love and thank you guys! 100,3,0,3,Neutral,True,0.003472868,0.15186125,0.13366604,0.71099985
+test_311,Check out our amazing Children products on our website darlyngandco.com and Parents Join our Private Facebook Group Here: ift.tt/2OILuiG,3,0,2,Irrelevant,False,0.005115274,0.14627093,0.6572726,0.19134119
+test_312,FACTS KING TALK THAT SHIT SO MUCH THEY DONT NOTICE,3,0,0,Negative,False,0.7726072,0.011454997,0.19536076,0.020577079
+test_313,But Sad enough to hear this ( will have to cancel my annual leave lol ) but glad they â?re making very sure that it â?s ready for day school 1,3,0,1,Positive,False,0.021233918,0.53194666,0.2551926,0.19162685
+test_314,They receive my ideas and the.. @PlayApex_Clips @ApexStreamTeam @Apex_Tracker G,3,0,1,Positive,False,0.06820868,0.6109517,0.1651796,0.15566
+test_315,Fancy winning Â£20 to spend on anything you want at Amazon? Say swipe over and enter with @life_breakdown,3,0,2,Irrelevant,False,0.16081001,0.15225875,0.35266128,0.33426994
+test_316,Microsoft: RDP brute force attacks last on average 2-3 days ift.tt / 2FrbFmu,3,0,3,Neutral,True,0.33691615,0.023653738,0.07418552,0.56524456
+test_317,WE ARE LIVE!... >. >. > NEW Monthly target!.. I hope everyone has a fantastic night and a good start to the week:) LOVES YES.. GOOD.,3,0,3,Neutral,True,0.012270874,0.27046794,0.27689782,0.44036344
+test_318,@anomalyxd use this for your next dumb ways to play csgo amazon.co.uk/Perixx-PERIPROâ?,3,0,3,Neutral,True,0.20671748,0.06507029,0.18026236,0.5479499
+test_319,2010 The Source Behind All The Xbox Series of X / R S Leaks Everything Has Art Now Ever Been Revealed press - at start. com. au / news / xbox / 2020 â?https://t.co/GXyq3kEhIo ],3,0,3,Neutral,True,0.028579589,0.050402958,0.025016652,0.89600086
+test_320,"Play Pro on an Xbox, Playstation or PC? Discord app and join the FIFA Pro Discord server using a link in our database.",3,0,2,Irrelevant,False,0.016682152,0.014750911,0.8448913,0.12367561
+test_321,Madden NFL 10 - PlayStation 4 9 Great offer on.95 ebay.to/39Mum0Q,3,0,3,Neutral,True,0.28665012,0.09901062,0.008745994,0.6055932
+test_322,"I'm sorry for the spamming, but if someone following me wants to play tf2, gta, dota 2, r6, rust or something else, just add me under steam. Too lazy to post my link rn. So this tweet is useless.",3,0,0,Negative,False,0.5065913,0.026327575,0.42288703,0.0441941
+test_323,Rusty binding and wrapping over NVIDIA PhysX... github.com / EmbarkStudios /...,3,0,3,Neutral,True,0.03714907,0.16121432,0.029468022,0.7721686
+test_324,"Nvidia says the store was ""inundated with malicious bots and resellers"" to launch the XX 3080, promising more maps.",3,0,0,Negative,False,0.7048923,0.01905619,0.071180865,0.20487063
+test_325,"Check out this item I just got! [Thunderfury, Blessed Blade of the Windseeker]  ",3,0,3,Neutral,True,0.032248158,0.3060701,0.049703106,0.6119786
+test_326,I drive all the way to Verizon just to find out google lied to me and the store is in Ohio not open https://t.co/gkbWC59raY],3,0,0,Negative,False,0.5203566,0.020870006,0.034101494,0.42467195
+test_327,Samsung wins $6.6 billion from Verizon in order for network equipment rwind.com / 2020 / 09 / 07 /...,3,0,3,Neutral,True,0.0675856,0.02632778,0.0038417617,0.90224487
+test_328,The Johnson & General Johnson Halts Talc Ltd Baby Powder Horse Sales Management wb. md / 2ylv9sV,3,0,3,Neutral,True,0.01692549,0.13669352,0.035401974,0.810979
+test_329,New on Ebay i.tt / 2VjD3vx Battlefield 1 For PS4 Pre-owned Great Condition https: / / Fenco / JGzcaWZdVP,3,0,3,Neutral,True,0.025773799,0.3351787,0.02983665,0.6092109
+test_330,"I've ve only been playing Face Hunter in Black Hearthstone and I'm sorry to say about that deck is just cheating. The opponent takes care more of everything I might have to readily offer up and it feels like I'm losing, but they'm re bleeding with health the whole time and just die on turn 8 anyway... It's great.",3,0,2,Irrelevant,False,0.042820808,0.09343193,0.65134937,0.21239793
+test_331,NVIDIA study: Warp Drive Gaming - eliminates more than 80% of performance delay penalties i.tt / 3exWY08,3,0,3,Neutral,True,0.47075653,0.042163678,0.0143470485,0.47273278
+test_332,For The RhandlerR R6 Tournament Grand Final is in 20 minutes crab the popcorn bois cause it's gonna be a good one!!!. twitch.tv/moderator/euroâ? .  ,3,0,3,Neutral,True,0.013091557,0.13707328,0.32919857,0.52063656
+test_333,Stayed Up All Night To Order the 'New Graphics Card 3080 from @ NVIDIAGeForce @ nvidia and guess what??.. it I went from Notify Me To Out Of Stock! This is BS * * * * even before the launch it!! I'm so additionally I didn't get the opportunity to order It.,3,0,0,Negative,False,0.8478168,0.06657887,0.0073680393,0.078236304
+test_334,In the month's episode of Tony P. Oddcast @RunJumpStomp helps me understand the differences between all three darn,3,0,0,Negative,False,0.3996937,0.23792477,0.028466903,0.33391464
+test_335,forgot how terrible i hated dota 2,3,0,0,Negative,False,0.4566715,0.3618412,0.08954805,0.09193916
+test_336,"CIS Qualifiers continue, pitting RhandlerR against RhandlerR. . Chinese Stream: douyu.com/topic/minor202â? . Russian Stream: twitch.tv/starladder1   ",3,0,3,Neutral,True,0.0312067,0.018594401,0.38071644,0.5694824
+test_337,"""Punk-2077"" postponed until December 10, 2020",3,0,3,Neutral,True,0.0258667,0.038439628,0.03943697,0.89625674
+test_338,"Cyberpunk 2077 is seriously indifferent to me, tbh.. To my knowledge it is not on any systems I own, let alone play a lot, and even then it does not look like the kind of game I would immediately fall in love with... But the status of its development is just kind of... weird to say the least.",3,0,0,Negative,False,0.3275636,0.32379997,0.052555166,0.29608127
+test_339,Official GameSpot : Lost Borderlands 3's DLC Dismisses Major Problems Running With Lovecraft's Underground Work as ift. 0 tt / 39qpeiS,3,0,3,Neutral,True,0.15058345,0.13955466,0.075438365,0.63442355
+test_340,I then just earned the [ Halls Building of Devotion ] Achievement!,3,0,3,Neutral,True,0.01233492,0.17827035,0.063872166,0.74552256
+test_341,I just Got the [Power Is Beautiful] Achievement!,3,0,3,Neutral,True,0.012619775,0.36650792,0.038444266,0.5824281
+test_342,For my mercy @AmbarKOrtiz was SO still mad at hugging me for making her pocket brain a bastion du LOL - - pixel spray pepper AND cute spray.,3,0,2,Irrelevant,False,0.036152996,0.1299199,0.76568073,0.06824638
+test_343,Thank you for fixing everything. You the GOAT Team of Dota 2. Good bloody luck coming with whatever comes next!,3,0,2,Irrelevant,False,0.01551147,0.45200315,0.45442247,0.078062825
+test_344,I accidentally ordered two of these from Amazon. Second arrived today. Does anyone want to buy it from me that lives local to Sidcup or South East? Â£30. Let me know otherwise Iâll send it back .  pic.twitter.com/YRzuENpXcl,3,0,3,Neutral,True,0.14066917,0.11733423,0.21724783,0.52474874
+test_345,Cyberpunk 2077 just got kicked into September gamereactor.eu/cyberpunk-2077â? ,3,0,0,Negative,False,0.37997222,0.25773105,0.10721589,0.25508082
+test_346,5 Broken bottle kills 2 a row. Generation II....,3,0,3,Neutral,True,0.33341095,0.081196375,0.028234746,0.55715793
+test_347,2008 Heavens Must Fall amazon. com / 2009 dp / B000UVKHNY / DVD â?,3,0,3,Neutral,True,0.034868903,0.08970119,0.01795751,0.8574724
+test_348,Activision rejects claims of 500K account hack https: / / threats-post.com / activision-refutes-claims-account-hack / 159433 / The Call of Duty giant said reports of widespread hacks were false https: / / t.co / 3MZa0ybUWi bit.ly / 32VbVa2 https: / / t.co / JUzxOtAEHp,3,0,3,Neutral,True,0.060316864,0.010185042,0.051327586,0.87817055
+test_349,Always go down with a fight.,3,0,2,Irrelevant,False,0.0050242133,0.018687649,0.8541187,0.12216937
+test_350,"When is FIFA 21 coming out? Not that Iâm gonna buy this shitty game made of greedy developers who has little but money playing their hand, just curious:)",3,0,0,Negative,False,0.630207,0.13585296,0.07969097,0.15424903
+test_351,I had my healslut romance duo ranked with in league of legends. Iâm so tired fighting these random cold teammates. It will be fun. Just get me healed like the dumb whore you are.,3,0,2,Irrelevant,False,0.015312252,0.039492346,0.8598058,0.08538964
+test_352,"This happened in food manufacturing: On Sept. 21 1961 Earle Dickson debuted. He invented Band-Aids for his wife, had had fatal kitchen accidents, cutting or burning herself. He opened for Taylor & Johnson, who soon began marketing Band-Aids.",3,0,3,Neutral,True,0.021466948,0.055801254,0.049665656,0.87306625
+test_353,"Pretty excited about this collaboration with KovaaK 2.0. Through Experiments mode our research scientists will test and bust myths in the competitive gaming space. We're adding NVIDIA Reflex, too!",3,0,1,Positive,False,0.014893399,0.8459431,0.031713586,0.10744992
+test_354,After several mental breakdowns to proudly present you:. A Gun shot (Immortal Journey Skinline). A big shout outs and many thanks to Jon and @unforjhinately for helping me with the design and keeping me going.,3,0,1,Positive,False,0.008021793,0.6499596,0.22686817,0.115150385
+test_355,The Man Why Xbox Canada Is Struggling to Win,3,0,0,Negative,False,0.82448167,0.03387717,0.018783163,0.12285808
+test_356,@ N2K _ MyTEAM moments??.,3,0,0,Negative,False,0.5971614,0.047567185,0.06965354,0.28561795
+test_357,@dota2updates this was fun when I had 100 but now itâs idiotic  ,3,0,0,Negative,False,0.84813225,0.11838622,0.01039527,0.023086263
+test_358,"bit.ly/Stock_Alerts Johnson & Johnson Pulls Talc-Based Baby Powder From US, Canada As Cancer Claims Kill Demand dlvr.it/RX0DPG â?via @AlertTrade https://t.co/ebpri50bYy",3,0,3,Neutral,True,0.0198415,0.008881006,0.041509245,0.92976826
+test_359,around I'm testing out what face serum sample I received from @origins. They sell this cute little size that anyone can use on applying cream Facebook mask and I'm honestly a little TOO excited to it.,3,0,1,Positive,False,0.029881103,0.500181,0.08787765,0.38206026
+test_360,Jeff Bezos sold $3.4 billion of Amazon shares just before Covid collapsed. theguardian.com / business / 2020 /...,3,0,3,Neutral,True,0.09693043,0.031363092,0.007694035,0.8640125
+test_361,2.5K Final Winners Ranked after Turbo ||!twitch!points!stats || Live India,3,0,3,Neutral,True,0.0042758263,0.06414202,0.27773213,0.65385
+test_362,"5 fantastic features of Xbox Series X, which we hope will come to the PS5 dlvr.it / RS07rL https: / / t.co / 2GvYXz2lH6",3,0,3,Neutral,True,0.0069491277,0.20943923,0.03796635,0.7456453
+test_363,"I was just going to comment... I played Battlefield 5 tonight, not a terrible game, but not my thing... Really just sad that @EA totally gave up on Battlefield 4... even though it was a shit show launch, it turned out to be their best games only topping 3 numbers. Its all about the money",3,0,0,Negative,False,0.60119325,0.22501889,0.11315601,0.06063181
+test_364,One more item for my  . . Azshara's blue skin would look awesome on a player model with golden jewelry.. . Can we also have matching facial markings?. .  .  ,3,0,2,Irrelevant,False,0.004460793,0.16409372,0.41933453,0.41211098
+test_365,Amazon's top-of-the-line Kindle is on sale for 30% more for a limited week. 1.today.com/3lMEXiR,3,0,3,Neutral,True,0.018349927,0.22653113,0.005737979,0.74938095
+test_366,It is not the first time that the EU Commission has taken such a step.,3,1,1,Positive,False,0.39115387,0.4696908,0.0076215295,0.13153385
+test_367,sic It was banned all though totally legal : Johnson & Johnson companies used a super poppy to better make narcotics for popular opioid recovery pills. From washingtonpost. com / graphics / 2020 / c â?,3,0,3,Neutral,True,0.18321657,0.09864312,0.07712773,0.64101255
+test_368,I made this cursed content for kiki and I'm putting it here too. Enjoy.. .  .  . . youtu.be/ssjYhbmyFDQ,3,0,3,Neutral,True,0.033293568,0.27818006,0.31163275,0.37689352
+test_369,If Microsoft Software finally shows onto us the Xbox Series X â?its s guts - dlsserve. com com / 1 microsoft - fina â?https://t.co/F6DcG1hlCq ],3,0,3,Neutral,True,0.06289463,0.045111768,0.040617786,0.8513759
+test_370,One more item designed for my.. The Azshara's blue skin would look really awesome riding on a player model with golden finger jewelry... Can when we each also have matching facial markings?...,3,0,3,Neutral,True,0.0056781275,0.15558296,0.40997726,0.42876172
+test_371,@Verizon now has another amazing opportunity. Thank... you.,3,0,1,Positive,False,0.064695835,0.79194516,0.052971195,0.090387836
+test_372,Check out via my video!,3,0,2,Irrelevant,False,0.0033715842,0.04147891,0.85654837,0.09860106
+test_373,"Welp, in case youâ?news, someone saw me complain on Facebook about COVID procedures with my university and sent it to An Assoc. Vice Provost via the Dean of Students office of my university. Said AVP emailed me in regard to my post. Saying say was angry would represent a vast understatement",3,0,0,Negative,False,0.70162594,0.014561073,0.15011458,0.13369843
+test_374,I WTF HAPPENED TO SJDKDKS.. html store. to playstation. com /,3,0,0,Negative,False,0.5412472,0.10833352,0.18441916,0.16600022
+test_375,If they let us cancel those jump drive when thrown I will cry tears of joy,3,0,3,Neutral,True,0.07577378,0.41280553,0.053167187,0.45825356
+test_376,"So, fun with the annoying thing @ MeatballMissus and I just learned: There are two different versions of Borderlands: Game of the Year Edition on Steam, and they are not compatible for online games.",3,0,0,Negative,False,0.5454928,0.21041393,0.055795703,0.18829753
+test_377,"After a few mental breakdowns, I'm proud to introduce you to:. Immel Journey Skinline. Big shout out and thanks to @ unforjhinately and @ IceSayu for helping me develop and keep me moving.",3,0,2,Irrelevant,False,0.017433237,0.35253334,0.5357431,0.094290294
+test_378,and RhandlerR Your solution for linking another account for League of Legends rewards doesn't work. I have claimed so many rewards for an incorrect account. pic.twitter.com/jsd8eXJEAT,3,0,0,Negative,False,0.4777206,0.051589932,0.31054717,0.16014235
+test_379,Big profits today!. ) . . .....,3,0,3,Neutral,True,0.34450632,0.1534625,0.07384405,0.42818713
+test_380,Best Video Game Westerns (That ARENâT Red Dead Redemption Games) â?ScreenÂ Rant travelerexperiences.com/en/best-video-â?,3,0,3,Neutral,True,0.029154526,0.022958953,0.105733365,0.84215313
+test_381,Nigga said fuck that silver car,3,0,0,Negative,False,0.64779454,0.015646636,0.29793897,0.038619854
+test_382,Check out some item I just got! [Uncanny Combatant's Leather Gauntlets from the Peerless],3,0,3,Neutral,True,0.019101229,0.21558112,0.08365565,0.681662
+test_383,PlayStation 5 release date leaked dr.it / RgggBp,3,0,3,Neutral,True,0.41592357,0.038321882,0.08426764,0.46148697
+test_384,I actually have a PS5 in my pencil cart but cant check out.,3,0,1,Positive,False,0.020118602,0.5074954,0.31179845,0.1605875
+test_385,"@GhostRecon good start in fixing this trash but long way to go still! I thought maybe I was still going to never get back into this game after the update, I almost did, hard but still no! At this current rate it just might not be playable after about 4 hundred more different updates, if you continue to change the entire thing each time.",3,0,1,Positive,False,0.30750322,0.3735229,0.028325643,0.29064825
+test_386,"I'm seriously indifferent to ""punk 2077,"" tbh.. As far as I know, it's not on any of the systems I own, let alone playing a lot, and even then it's not like the game I'd be in right now.... But the status of its development is just kind of... strange, to say the least.",3,0,0,Negative,False,0.5424309,0.23424843,0.04569209,0.17762864
+test_387,"Punk 2077 Postponed until September 17, 2020 stadiasource.com / article / 268 / Cy...",3,0,3,Neutral,True,0.055337347,0.026437199,0.04884189,0.86938363
+test_388,When the good girl meets this good black dick... 3-book bundle.. Buy it from Amazon: authl.it / B07MD6S522. or Smashwords: smashwords.com / books / view / 914... https: / / t.co / 75xMRKkPbb,3,0,3,Neutral,True,0.01525929,0.10107336,0.062694274,0.82097304
+test_389,Honking... @ LeagueOfLegends pic.twitter.com / qk7WqHsg8G,3,0,2,Irrelevant,False,0.055705167,0.1260303,0.5976103,0.22065423
+test_390,"Filter selfies while I was constantly being murdered by The Predator.. Also, I met a dog. The others couldn't see him, so proof of his existence.. He borrowed from me haha...",3,0,2,Irrelevant,False,0.13230482,0.029729309,0.47941247,0.35855338
+test_391,"The flow is over. Gets FiNN Damascus, moved to the cliffs now with Renetti aligned on the side too. Rocks are iron sights of TERRIBLEY, but in delivery it doesn't matter much.",3,0,0,Negative,False,0.38487166,0.11244118,0.22672108,0.2759661
+test_392,3 Killed In Lay Firing In Kabul Amid Violence Over FacebookÂ Post mvpnews.in/3-killed-in-poâ?,3,0,2,Irrelevant,False,0.042198494,0.011207924,0.76267,0.18392359
+test_393,"Cyberpunk 2077 Won't Be Delayed Again, CD Projekt RED Assures xboxachievements.com/news/news-3663â?https://t.co/YGjU6R39LU",3,0,3,Neutral,True,0.033308066,0.062269352,0.05783584,0.84658676
+test_394,"5 minutes to 12 o'clock, and we were:.. HOODWINKED. BAMBOOZLED. LED ASTRAY. RUN AMOK. & FLAT OUT DECEIVED.",3,0,0,Negative,False,0.7554494,0.08065634,0.08348946,0.080404766
+test_395,"Man FIFA 19 was my game despite how different shit shit it just was, shame I can â?didn t play FIFA Soccer 20 so I can wanna rip my brains out again",3,0,0,Negative,False,0.80707633,0.029819118,0.13219126,0.030913286
+test_396,"2. 5K Best Bracket, which Ranked after Turbo | |! twitch! it points! the stats | | Live Air India",3,0,3,Neutral,True,0.0065961494,0.02448249,0.21324515,0.75567627

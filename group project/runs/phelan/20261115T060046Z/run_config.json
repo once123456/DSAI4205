@@ -1,0 +1,27 @@
+{
+  "model_id": "google-bert/bert-base-uncased",
+  "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "pooling": "mean",
+  "max_length": 128,
+  "seed": 42,
+  "use_surface_features": true,
+  "surface_features": [
+    "exclaim_count",
+    "question_count",
+    "url_count",
+    "mention_count"
+  ],
+  "train_rows": 473,
+  "val_rows": 118,
+  "test_rows": 397,
+  "best_hyperparameters": {
+    "hidden": [
+      512,
+      256
+    ],
+    "dropout": 0.5,
+    "lr": 0.001,
+    "class_weight": true,
+    "val_macro_f1": 0.514
+  }
+}
