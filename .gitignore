@@ -20,7 +20,6 @@ qwen_lora_runs/
 qwen_distillation_runs/
 *.safetensors
 *.zip
-
 # Private course material; keep split manifests and aggregate metrics.
 /group project/Data 5 - Twitter/testdata.csv
 /group project/Data 5 - Twitter/traindata.csv
@@ -59,3 +58,6 @@ tfidf_runs/
 
 # Local Yuchen training outputs (checkpoints and embedding matrices)
 bilstm_outputs/
+
+# Local torch wheel (large binary, not source)
+*.whl

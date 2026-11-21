@@ -8,7 +8,7 @@ DSAI4205 Big Data Analytics | Final project working draft | 16 November 2026
 
 This project investigates four-way sentiment classification of short Twitter messages for decision support. The supplied data contain 596 training rows and 397 test rows. After removing duplicate training rows and a training example overlapping the test set, 591 training-pool rows remain. A fixed split assigns 473 rows to training and 118 to validation; the original 397-row test set is retained.
 
-A TF-IDF and logistic regression baseline trained on the 473-row subset achieves test macro-F1 of 0.4461. A frozen BERT embedding with a separately trained multilayer perceptron (MLP) achieves 0.4843, an observed difference of 3.82 percentage points. An exploratory Qwen3-0.6B LoRA experiment achieves 0.4850 in its standalone label-only run. The Qwen experiments study alternative supervision and do not establish an additional independent embedding–classifier pair under the assignment rules. In a separate matched-protocol distillation comparison, short rationales yield a test macro-F1 of 0.4886 against 0.4745 for that experiment's label-only control, but the reported paired bootstrap interval crosses zero. The test set is small and these comparisons do not establish causation or generalization to other brands or periods.
+A TF-IDF and logistic regression baseline trained on the 473-row subset achieves test macro-F1 of 0.4461. The original frozen BERT embedding with a separately trained multilayer perceptron (MLP) achieves 0.4843, an observed difference of 3.82 percentage points. A later exploratory class-weight candidate achieves 0.4971; its selection involved a post-hoc validation tolerance and its paired bootstrap interval against the original crosses zero. We compared 11 configurations. The locked challenger used base BERT with text alone. On the shared 397-message test set it scored 0.4686 macro-F1 and 0.4786 accuracy, against 0.4971 and 0.5113 for the previous class-weight model. No finalist met all three validation thresholds. The class-weight configuration (v4) remains the selected submission model and the challenger is an exploratory result. Results for the other members' current models, including Kai's updated multi-seed results, remain to be verified and inserted. The test set is small and has been inspected in previous work, so these comparisons do not establish causation or generalization to other brands or periods.
 
 The findings support a human-reviewed workflow for prioritizing potential customer feedback, not fully automated brand assessment. A validation-selected refinement of the baseline scores 0.4368 on the test set, lower than the original baseline. Results for the remaining required independent analytics models are still needed before final comparisons.
 
@@ -78,17 +78,43 @@ The implemented model freezes `google-bert/bert-base-uncased` at revision `86b5e
 
 The test macro-F1 is 0.4843 and accuracy 0.5038. Relative to the 473-row baseline, the observed macro-F1 difference is +0.0382. Irrelevant recall rises from 0.1515 to approximately 0.333, while its precision falls from 0.8333 to 0.286; the model therefore captures more irrelevant messages but produces more false alarms for that label. These are descriptive comparisons, not proof that any particular design component caused the difference. Excluding the flagged overlap row gives macro-F1 0.4856 on 396 test rows.
 
-### 5.3 Qwen exploratory supervision experiments
+### 5.3 BERT refinement and candidate
 
-The standalone label-only experiment fine-tunes Qwen3-0.6B with LoRA, selecting checkpoint 180 by validation macro-F1 (0.5374). It reports test macro-F1 0.4850 and accuracy 0.5088. This is an exploratory generative-model result; its decoder serves the prediction task and is not presented as one of the assignment's required independent embedding–classifier pairs.
+The follow-up experiments included two deeper MLP heads, three supervised-contrastive weights, 24 class-specific logit-offset configurations, and eight class-weight adjustments. No variant satisfied the original requirement that validation macro-F1, Irrelevant F1 and Neutral F1 all match or exceed the reproduced original with at least one strict improvement. After inspecting validation results, a tolerance of 0.005 validation macro-F1 was introduced while requiring both target-class F1 scores to improve. The resulting exploratory candidate used multipliers of 1.25 for the balanced Irrelevant weight and 0.75 for the balanced Neutral weight. Its validation macro-F1 was 0.5118, compared with 0.5140 for the original.
 
-In a separate rationale-distillation run, the label-only control reports macro-F1 0.4745 and the unfiltered-rationale model 0.4886, a difference of 0.0141 with a reported 95% paired bootstrap interval of [−0.0195, 0.0508]. The interval crosses zero; this single-seed experiment does not establish a reliable gain. The matched-protocol control of 0.4745 must be used for this comparison, rather than substituting the standalone 0.4850. The teacher produced format-valid auxiliary rationales for 464 of 473 training rows, while strict filtering retained 193, with uneven class coverage.
+On the previously inspected 397-row test set, this candidate achieved macro-F1 0.4971 and accuracy 0.5113. Irrelevant F1 was 0.3399 and Neutral F1 0.5246. Its Neutral recall fell from 0.5048 to 0.4571. A conditional paired 95% bootstrap interval for the candidate-minus-original macro-F1 difference was [−0.0130, 0.0383]; it does not include the uncertainty due to repeated selection or training seeds. The interval crosses zero. Back-translation was added in the following study. The full method, results and limitations are recorded in `reports/phelan_overleaf/phelan_section.tex` and `runs/phelan/20261121_refinement_v4/`.
 
-The counterfactual experiment accepted 46 of 80 attempted parent examples. Its own rationale-only control reports 0.4855 and the augmented version 0.4873; the stored unrounded difference is +0.0017, with a reported 95% interval [−0.0408, 0.0471]. This result also does not establish a reliable gain. Additional matched-count experiments are pending; the available summaries do not supply their results.
+### 5.3.1 Representation transfer and controlled augmentation
 
-### 5.4 Other required embedding and analytics pairs
+We compared 11 configurations using four stratified group folds inside the 473 training rows and three MLP seeds, with 36 full-batch updates for each head. The study compared original counts, writing style, VADER polarity scores, upper-layer pooling and a frozen SST-2 BERT checkpoint. Its external binary classifier was removed. Each candidate retained an independently trained four-way MLP. Three finalists advanced to the fixed validation split. Replacement required matching or exceeding v4 in macro-F1 and both target-class F1 scores.
 
-[Pending: identify all remaining team members' models, actual independent embedding and classifier components, data splits, validation choices, test predictions, per-class results, and reproducible code. Confirm the total number of eligible pairs with the team and teaching staff where ambiguous.]
+Removing the original four counts changed out-of-fold macro-F1 from 0.4494 to 0.4672, Irrelevant F1 from 0.3114 to 0.3230 and Neutral F1 from 0.3927 to 0.4292. Adding VADER to the four counts changed Irrelevant F1 by -0.0221 and Neutral F1 by +0.0288. Thus a polarity signal that helps one target can hurt the other. With the same four counts and MLP, switching to the SST-2 encoder changed macro-F1 by +0.0095. This comparison includes extra sentiment supervision acquired by the released checkpoint before our project. It does not establish a benefit from adding more project training rows.
+
+Both translation directions ran locally on the 121 Neutral training parents. The fixed checks accepted 76 proposed paraphrases before fold-specific deduplication. Across the 473 pooled out-of-fold predictions, macro-F1 was 0.4557 without augmentation, 0.4599 with matched repetition and 0.4539 with back-translation. Back-translation changed Neutral F1 by +0.0025 versus matched repetition.
+
+We compared 11 configurations. The locked challenger used base BERT with text alone. On the shared 397-message test set it scored 0.4686 macro-F1 and 0.4786 accuracy, against 0.4971 and 0.5113 for the previous class-weight model. No finalist met all three validation thresholds. The class-weight configuration (v4) remains the selected submission model and the challenger is an exploratory result. On official validation the challenger achieved macro-F1 0.4679, Irrelevant F1 0.3200 and Neutral F1 0.4651. On the project test set its Irrelevant F1 was 0.3273 and Neutral F1 0.4914. The macro-F1 difference was +0.0225 versus the original baseline and +0.0318 versus the tuned baseline. The challenger-minus-v4 paired 95% interval was [-0.0512, -0.0065]. It describes test-row variability for fixed predictions on this previously used set.
+
+On the shared test messages, v4 routed 87 messages to the Irrelevant category and correctly identified 26 of the 66 actual Irrelevant cases. The challenger routed 99 messages there and identified 27. Automatically suppressing that queue would hide 72 messages carrying one of the other labels. The challenger correctly retained 43 of 105 Neutral messages, compared with 48 for v4. Across all four labels it corrected 5 of v4's mistakes and introduced 18 new ones. A reviewer can use the suggested label to sort messages while preserving the text and its intended entity for inspection.
+
+![Per-class F1 on the shared test rows](phelan_overleaf/transfer_class_f1.png)
+
+### 5.4 Kai's current embedding experiment
+
+[Pending: obtain and verify Kai's current frozen-Qwen embedding and independent MLP implementation, multi-seed aggregate, data split, test predictions and protocol. The old seed-42 generative LoRA result is not a substitute for the new model's result. The public remote snapshot describes the implementation but does not contain its formal aggregate results.]
+
+### 5.5 Other required embedding and analytics pairs
+
+The following contributor-to-model mapping was provided by the team and remains subject to verification against each member's final code and experiment record. It describes model ownership only; the team's broader project responsibilities and schedule are still to be confirmed.
+
+| Contributor | Model reported by the team | Verified test metrics and implementation |
+|---|---|---|
+| Pang Zhihan (Phelan) | Frozen BERT + independent MLP | Original and exploratory candidate documented above |
+| Huang Huakai (Kai) | Qwen representations + independent MLP | Pending current multi-seed aggregate and predictions |
+| Huang Huakun | ELMo + TextCNN | Pending code and results |
+| Gu Yuchen | GloVe + MLP | Pending code and results |
+| Yang Jingwen | multilingual-e5-large-instruct + SVM | Pending code, result files and split verification |
+
+The public remote documentation describes Kai's approach as inspired by LLM2Vec, while explicitly stating that it does not reproduce LLM2Vec's bidirectional-attention and contrastive-training procedure. The team should verify the exact implementation before naming it. Three reported approaches use an MLP classifier; because the assignment rewards diversity among analytics models, their treatment as distinct model families should be discussed with the team or instructor rather than assumed.
 
 ## 6 Comparison and refinement
 
@@ -96,10 +122,13 @@ The counterfactual experiment accepted 46 of 80 attempted parent examples. Its o
 |---|---:|---:|---:|---|
 | TF-IDF + logistic regression | 473 | 0.4912 | 0.4461 | Comparable baseline |
 | Frozen BERT + independent MLP | 473 | 0.5038 | 0.4843 | Eligible pair, subject to final review |
-| Qwen LoRA label-only | 473 | 0.5088 | 0.4850 | Exploratory; eligibility not established |
-| Qwen rationale unfiltered | 473 original rows plus rationale supervision | 0.5063 | 0.4886 | Separate experimental protocol |
+| BERT + independent MLP, exploratory adjusted weights | 473 | 0.5113 | 0.4971 | Post-hoc validation tolerance; interval crosses zero |
+| Kai's current embedding + MLP | Pending | Pending | Pending | Awaiting current multi-seed results |
+| Phelan, locked three-seed challenger | 473 original | 0.4786 | 0.4686 | Exploratory, v4 retained by validation rule |
 | Validation-selected TF-IDF + logistic regression | 473 | 0.4635 | 0.4368 | Refined baseline; 24 validation trials |
 | Other independent pairs | Pending | Pending | Pending | Required by assignment |
+
+The original and adjusted-weight BERT rows are two experiments using the same analytics model, not two of the required independent model families.
 
 The BERT search records eight validation configurations varying hidden-layer size, dropout and class weighting. At hidden sizes [512, 256] and dropout 0.5, validation macro-F1 is 0.4767 without class weights and 0.5140 with balanced weights. This is a single validation comparison, not an isolated test-set estimate of the weight effect. Feature contributions cannot be attributed to the four surface features without a corresponding ablation.
 
@@ -126,5 +155,7 @@ The repository contains cleaning and analysis scripts, a shared split manifest, 
 - Comparable baseline: `models/tfidf-lr/experiment.py` and `data/processed/split_manifest.csv`; per-class metrics recomputed 16 November 2026 from the local processed CSVs using the documented model settings.
 - Baseline refinement: `models/tfidf-lr/refine_baseline.py` and `runs/baseline_refinement/results.json`, `validation_trials.json`, `test_predictions.csv`.
 - BERT: `runs/phelan/bert_mlp_summary.md`, `runs/phelan/20261115T060046Z/tuning.json`, and `run_config.json`.
-- Qwen: the three summary files in `runs/kai/`; paired intervals are reported from those files and have not been independently recomputed from predictions.
+- BERT refinement: `runs/phelan/20261121_refinement_v4/results.json` and `paired_bootstrap.json`; implementation in `notebooks/phelan/BERT_MLP_Refinement.ipynb`.
+- Frozen-encoder transfer and Neutral augmentation: `runs/phelan/20261121_transfer_study/` contains the fixed protocol, original row-to-fold map, per-seed predictions, translation audit, validation decision and paired test comparisons.
+- Kai's current embedding experiment: multi-seed results and supporting files remain pending; do not substitute historical single-seed generative results.
 - The description of the factual comparison and the placeholders must be reviewed after all remaining model artifacts are received.
