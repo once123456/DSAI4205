@@ -1,0 +1,40 @@
+{
+  "L1 bge-large + SVM": {
+    "views": [
+      "bge_large"
+    ],
+    "C": 4,
+    "pool_cv_macro_f1": 0.5216036530148735
+  },
+  "L2 e5-instruct sentiment view + SVM": {
+    "views": [
+      "e5i_sentiment"
+    ],
+    "C": 16,
+    "pool_cv_macro_f1": 0.5467758210148017
+  },
+  "L3 three task views + multi-kernel SVM": {
+    "views": [
+      "e5i_sentiment",
+      "e5i_topic",
+      "e5i_style"
+    ],
+    "C": 8,
+    "pool_cv_macro_f1": 0.5570164135517224
+  },
+  "L4 six views (prompt ensemble) + multi-kernel SVM": {
+    "views": [
+      "e5i_sentiment",
+      "e5i_topic",
+      "e5i_style",
+      "e5i_sentiment_v2",
+      "e5i_topic_v2",
+      "e5i_style_v2"
+    ],
+    "C": 4,
+    "pool_cv_macro_f1": 0.5645253816466009
+  },
+  "gamma_scale": 2.0,
+  "paraphrased_test_rows_vs_473": 23,
+  "paraphrased_test_rows_vs_591": 25
+}

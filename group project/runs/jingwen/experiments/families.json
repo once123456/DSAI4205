@@ -1,0 +1,27 @@
+{
+  "kNN (cosine)": {
+    "setting": "k=5",
+    "mean": 0.5120225935315307,
+    "std": 0.0428216905044554
+  },
+  "Random forest": {
+    "setting": "trees=500 depth=12",
+    "mean": 0.5408041607776698,
+    "std": 0.03155840373146169
+  },
+  "Gradient boosting (PCA 64)": {
+    "setting": "lr=0.1",
+    "mean": 0.5189482802946387,
+    "std": 0.044696916128333035
+  },
+  "Gaussian process (PCA 128)": {
+    "setting": "length=1.0",
+    "mean": 0.47141293229679954,
+    "std": 0.03329973298193653
+  },
+  "MLP": {
+    "setting": "hidden=512 alpha=0.01 epochs=50",
+    "mean": 0.5523479482427541,
+    "std": 0.032899625379935474
+  }
+}
