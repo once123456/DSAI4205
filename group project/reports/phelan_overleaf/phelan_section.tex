@@ -1,0 +1,108 @@
+\section{Model objective and evaluation protocol}
+We investigated a four-class Twitter sentiment classifier with labels Negative, Positive, Irrelevant, and Neutral. The task is described as entity-level sentiment, but the supplied data have no separate target-entity field. The model receives the message text, so entity-specific attribution in messages mentioning multiple entities remains uncertain.
+
+The cleaned training pool contains 591 messages, divided by the shared manifest into 473 training and 118 validation examples. The original 397 test examples were retained. A duplicate across the source training and test files was removed from the training pool; its conflicting test counterpart was retained and flagged. All model comparisons in this section use the same 473 training examples and 397 test examples. We use macro-averaged F1 because the classes have different sizes. The TF--IDF plus logistic-regression baseline fitted on the full 591-row pool scores 0.4662 macro-F1, but it is not the same-training-size comparator used below.
+
+\section{Frozen BERT with a separate MLP}
+Our model uses pretrained \texttt{bert-base-uncased} as a frozen contextual feature extractor \cite{bert}. The input receives light encoding and Unicode repair and whitespace normalization, without the baseline's lemmatization and punctuation removal. The uncased tokenizer applies its own case normalization and truncates inputs to 128 tokens. Attention-mask-aware mean pooling averages the non-padding token representations, including special tokens, to produce a 768-dimensional message vector. We add four features: counts of exclamation marks, question marks, URLs, and mentions. A standard scaler is fitted only on the training partition, producing a total input dimension of 772.
+
+The analytics classifier is a separately trained multilayer perceptron (MLP): $772\rightarrow512\rightarrow256\rightarrow4$, with ReLU hidden activations and dropout of 0.5. BERT weights remain frozen; the MLP is trained on the project data. The classifier uses Adam with learning rate $10^{-3}$, weight decay $10^{-4}$, balanced class-weighted cross-entropy, and early stopping after 15 epochs without validation macro-F1 improvement. The initial search compared eight combinations of two hidden sizes, two dropout rates, and whether to use balanced class weights. The selected original configuration achieved validation macro-F1 0.5140. The original model and first refinement study use seed 42. The representation and augmentation study uses three seeds.
+
+\section{Original model compared with the baseline}
+Table~\ref{tab:class} compares precision, recall, and F1 for each test class. Values in the $\Delta$ columns are the original BERT--MLP result minus the baseline, in absolute metric units. Both models use the same test rows and training-set size, but differ in representation, classifier, features, and class weighting. Therefore, these differences do not isolate the causal effect of any one design choice.
+
+\begin{table}[htbp]
+\centering
+\caption{Test metrics for the 473-row TF--IDF baseline and original BERT--MLP.}
+\label{tab:class}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+& \multicolumn{3}{c}{Precision} & \multicolumn{3}{c}{Recall} & \multicolumn{3}{c}{F1} & \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+Class & Base & BERT & $\Delta$ & Base & BERT & $\Delta$ & Base & BERT & $\Delta$ & $n$ \\
+\midrule
+Negative & 0.5123 & 0.5692 & +0.0569 & 0.6917 & 0.6167 & -0.0750 & 0.5887 & 0.5920 & +0.0033 & 120 \\
+Positive & 0.4220 & 0.5604 & +0.1384 & 0.4340 & 0.4811 & +0.0472 & 0.4279 & 0.5178 & +0.0899 & 106 \\
+Irrelevant & 0.8333 & 0.2857 & -0.5476 & 0.1515 & 0.3333 & +0.1818 & 0.2564 & 0.3077 & +0.0513 & 66 \\
+Neutral & 0.4912 & 0.5354 & +0.0441 & 0.5333 & 0.5048 & -0.0286 & 0.5114 & 0.5196 & +0.0082 & 105 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+The original BERT--MLP attains macro-F1 0.4843 and accuracy 0.5038, against 0.4461 and 0.4912 for the same-size baseline. The Positive class has the largest observed F1 increase. Negative precision rises but recall falls, leaving F1 nearly unchanged. Irrelevant recall more than doubles, from 10 of 66 examples to 22 of 66, but precision drops substantially because more messages are predicted as Irrelevant. Neutral precision rises slightly while recall falls; its F1 changes little. Contextual representations, additional surface features, and class weighting are plausible contributors to the different error patterns, but a component-level ablation would be needed to identify their separate effects.
+
+The original model's confusion matrix is shown in Table~\ref{tab:cm}. For example, 25 Neutral messages are predicted as Negative, which would add unnecessary cases to a complaint-review queue. The 66-example Irrelevant test support is small; changes involving only a few examples can noticeably alter its F1. The absence of a separate target entity and possible label ambiguity are additional plausible sources of difficulty, not experimentally verified explanations for individual errors.
+
+\begin{table}[htbp]
+\centering
+\caption{Original BERT--MLP confusion matrix; rows are true labels.}
+\label{tab:cm}
+\begin{tabular}{lrrrr}
+\toprule
+True / predicted & Negative & Positive & Irrelevant & Neutral \\
+\midrule
+Negative & 74 & 15 & 21 & 10 \\
+Positive & 16 & 51 & 17 & 22 \\
+Irrelevant & 15 & 15 & 22 & 14 \\
+Neutral & 25 & 10 & 17 & 53 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Refinement experiments}
+The goal was to increase Irrelevant and Neutral F1 while retaining overall performance. We first evaluated two deeper MLP heads and three supervised-contrastive settings on the fixed validation set. The contrastive loss follows the same-label-positive principle of supervised contrastive learning \cite{supcon}, but is applied here to normalized MLP hidden representations with frozen BERT; this is an adaptation, not a reproduction of the original paper's vision training protocol. The loss combines weighted cross-entropy with $\lambda$ times the contrastive term, using temperature 0.1 and a full training batch. The other loss settings use balanced class weights. Table~\ref{tab:val} reports validation rather than test results.
+
+\begin{table}[htbp]
+\centering
+\caption{Validation results for the initial model and first refinement round.}
+\label{tab:val}
+\begin{tabular}{lrrr}
+\toprule
+Configuration & Macro-F1 & Irrelevant F1 & Neutral F1 \\
+\midrule
+Original, reproduced & 0.5140 & 0.3636 & 0.5200 \\
+Deep head: 512, 256, 128 & 0.4775 & 0.3333 & 0.4783 \\
+Deep head: 512, 256, 128, 64 & 0.4560 & 0.1818 & 0.5106 \\
+Contrastive $\lambda=0.05$ & 0.5054 & 0.3721 & 0.4800 \\
+Contrastive $\lambda=0.15$ & 0.4795 & 0.2963 & 0.4889 \\
+Contrastive $\lambda=0.30$ & 0.4772 & 0.2745 & 0.5106 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The original selection rule required macro-F1 and both target-class F1 scores to be at least as high as the reproduced original, with at least one strict improvement. None of the first-round variants met that rule. In a second exploratory round, we evaluated 24 nonzero pairs of additive Irrelevant and Neutral logit offsets on validation; none met the same three-part requirement. These offsets change the decision rule and are not probability calibration. In a third round, we evaluated eight combinations in which the two classes' balanced loss weights were multiplied by 0.75, 1.00, or 1.25, excluding the unchanged pair. Again, no configuration met the strict rule.
+
+The class-weight setting with Irrelevant multiplier 1.25 and Neutral multiplier 0.75 gave validation macro-F1 0.5118, Irrelevant F1 0.3673, and Neutral F1 0.5238. After inspecting these validation results, we introduced a tolerance of 0.005 macro-F1 provided both target-class F1 scores strictly improved. This setting qualified under that \emph{post hoc} rule and was selected as an exploratory candidate. The tolerance and the follow-up grids were not preregistered; repeated searches over 118 validation examples can overfit that partition. The first study includes 14 trained configurations, including the original, and 24 offset-only configurations.
+
+\section{Exploratory candidate test comparison}
+Table~\ref{tab:final} compares the original model and the selected class-weight candidate on the same 397 test rows. The candidate changes only the class-weight multipliers relative to the reproduced original; it retains the same frozen encoder and MLP architecture. Its observed macro-F1 rises by 0.0128, Irrelevant F1 by 0.0322, and Neutral F1 by 0.0050. However, Neutral recall falls from 0.5048 to 0.4571 even as its precision rises from 0.5354 to 0.6154. This distinction matters if missing Neutral messages is costly.
+
+\begin{table}[htbp]
+\centering
+\caption{Observed test F1 and accuracy; the selected candidate is exploratory.}
+\label{tab:final}
+\begin{tabular}{lrrr}
+\toprule
+Metric & Original & Candidate & Difference \\
+\midrule
+Macro-F1 & 0.4843 & 0.4971 & +0.0128 \\
+Accuracy & 0.5038 & 0.5113 & +0.0076 \\
+Negative F1 & 0.5920 & 0.5917 & -0.0003 \\
+Positive F1 & 0.5178 & 0.5321 & +0.0143 \\
+Irrelevant F1 & 0.3077 & 0.3399 & +0.0322 \\
+Neutral F1 & 0.5196 & 0.5246 & +0.0050 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A paired, non-stratified bootstrap over 5,000 resamples of the 397 test rows gives a conditional 95\% percentile interval of $[-0.0130,\,0.0383]$ for the candidate-minus-original macro-F1 difference. The corresponding intervals for Irrelevant and Neutral F1 differences are $[-0.0204,\,0.0895]$ and $[-0.0428,\,0.0490]$. All include zero. These intervals reflect test-row sampling variability for the two fixed trained models only; they do not account for training-seed variability, validation-search selection, or prior inspection of the test set. They do not establish a reliable improvement.
+
+The next study tests Neutral back-translation against a quantity-matched repetition control.
+
+\input{transfer_study}
+
+\section{Limitations and reproducibility}
+The training and test samples are small. The first study used one seed. The second used three MLP initializations and grouped folds within training, but the same official validation and project test sets were used throughout. The project test set was also inspected in previous experiments, so it cannot be described as a fresh untouched final holdout. A fresh external test set would provide a stronger performance estimate. The second study removed all four original surface counts together. Their individual contributions remain unresolved. For operational use, predictions should support review of the original message and intended entity rather than replace human judgment.
+
+The recorded BERT revision is \texttt{86b5e0934494bd15c9632b12f734a8a67f723594}. The refinement notebook records its split, configuration, per-epoch validation histories, validation comparisons, selected MLP weights, fitted surface scaler, per-row test predictions, metrics, and paired-bootstrap analysis. The standalone notebook and all other members' preprocessing and models must still be combined into the single, well-annotated notebook required by the assignment.

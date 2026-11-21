@@ -1,0 +1,6 @@
+{
+  "retained_after_train_dedup": 76,
+  "exact_validation_matches": [],
+  "exact_test_matches": [],
+  "check": "normalized, case-insensitive exact text; performed only after challenger lock"
+}
