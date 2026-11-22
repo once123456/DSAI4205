@@ -1,0 +1,87 @@
+{
+  "commit": "72c90bc8daa32823f6cd5fcd48f2274de67a7e54",
+  "gpu": "NVIDIA GeForce RTX 5090, 32607 MiB, 580.178.04",
+  "runtime": {
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "python": "3.11.13"
+  },
+  "checks": [
+    {
+      "name": "kai-split",
+      "status": "pass",
+      "rc": 0,
+      "seconds": 0.71
+    },
+    {
+      "name": "kai-ae",
+      "status": "pass",
+      "rc": 0,
+      "seconds": 12.13
+    },
+    {
+      "name": "kai-validator-label-only",
+      "status": "pass",
+      "rc": 0,
+      "seconds": 12.13
+    },
+    {
+      "name": "kai-label-smoke",
+      "status": "failed",
+      "rc": 1,
+      "seconds": 15.49
+    },
+    {
+      "name": "kai-validator-rationale-distillation",
+      "status": "pass",
+      "rc": 0,
+      "seconds": 17.99
+    },
+    {
+      "name": "kai-validator-counterfactual",
+      "status": "pass",
+      "rc": 0,
+      "seconds": 5.27
+    },
+    {
+      "name": "kai-validator-embedding-mlp",
+      "status": "pass",
+      "rc": 0,
+      "seconds": 6.17
+    },
+    {
+      "name": "kai-diagnosis",
+      "status": "pass",
+      "rc": 0,
+      "seconds": 18.4
+    },
+    {
+      "name": "kai-archived-ab-replay",
+      "status": "pass",
+      "rc": 0,
+      "seconds": 8.38
+    },
+    {
+      "name": "kai-label-default",
+      "status": "failed",
+      "rc": 1,
+      "seconds": 332.28
+    }
+  ],
+  "errors": {
+    "kai-label-smoke": "AssertionError: 保存/重载结果不一致。",
+    "kai-label-default": "AssertionError: 保存/重载结果不一致。"
+  },
+  "adapter_reload": {
+    "dtype": "torch.bfloat16",
+    "adapter_tensors_equal": true,
+    "gpu_same_batch_reload": 0.03123888373374939,
+    "gpu_single_reload": 0.029059529304504395,
+    "original_gpu_change_batch": 0.008700095117092133,
+    "cpu32_vs_gpu_single": 0.18973225355148315
+  },
+  "stored_replay": [
+    "REPLAY A_mean 397 matched all labels and row IDs",
+    "REPLAY B_mean 397 matched all labels and row IDs"
+  ]
+}

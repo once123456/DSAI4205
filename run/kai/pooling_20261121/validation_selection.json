@@ -1,0 +1,5 @@
+{
+  "pooling": "comment_mean",
+  "criterion": "five-seed mean validation macro-F1",
+  "test_not_used": true
+}

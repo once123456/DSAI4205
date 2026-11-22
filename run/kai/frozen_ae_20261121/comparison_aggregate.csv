@@ -1,0 +1,3 @@
+arm,experiment,mean_macro_f1,std_macro_f1,mean_accuracy,seeds
+A,qwen_base,0.4678487756434524,,0.5289672544080605,1
+E,qwen_embedding,0.47832722233862923,,0.5062972292191436,1

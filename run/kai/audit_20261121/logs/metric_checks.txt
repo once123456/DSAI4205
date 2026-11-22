@@ -1,0 +1,1 @@
+PASS: ECE perfect/uniform/boundary fixtures; 100 bootstrap F1 comparisons to sklearn; probabilities and row ID alignment. Prior seed42 labels reproduced exactly in main log.

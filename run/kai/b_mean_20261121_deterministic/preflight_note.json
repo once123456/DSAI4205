@@ -1,0 +1,3 @@
+{
+  "reason": "Non-deterministic SDPA backward warnings detected; restart with strict deterministic algorithms. Same data/hyperparameters/seeds; preflight checkpoints excluded."
+}

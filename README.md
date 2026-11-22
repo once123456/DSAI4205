@@ -18,6 +18,8 @@
 | [全组代码 Notebook](submission/01_Group_Implementation.ipynb) | 汇集数据清洗、探索分析、共享基线和五位成员的模型实现。默认执行可检查代码与运行入口；复现实验时，在开头选择对应模型并配置数据路径。 |
 | [全组实验日志 Notebook](submission/02_Experiment_Log.ipynb) | 汇总实验设置、指标、图表和复跑记录。打开即可查看已保存的结果；训练集交叉验证与测试集结果分别标注。 |
 
+Kai 的[实验数据与训练日志](run/kai/)和[五种子 B_mean 模型归档](https://huggingface.co/kingkaikai/DSAI4205-Qwen3-0.6B-B-mean)分别提供结果表、适配器、分类头及重放特征。
+
 各成员继续在 [原始 Notebook 目录](group%20project/notebooks/) 维护自己的实现。课程要求的 Word 正式报告和展示幻灯片另行提交。
 
 ## 数据与评估

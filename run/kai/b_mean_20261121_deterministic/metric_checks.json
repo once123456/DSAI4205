@@ -1,0 +1,7 @@
+{
+  "all_prediction_row_ids_and_gold_aligned": true,
+  "all_probabilities_normalized": true,
+  "ece_fixtures_passed": true,
+  "bootstrap_f1_vs_sklearn_checks": 50,
+  "temperature_preserves_predictions": true
+}

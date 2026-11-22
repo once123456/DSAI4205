@@ -1,0 +1,11 @@
+{
+  "boundary_fixtures": 5,
+  "all_rows_exact_comment_decode": 988,
+  "boundary_crossings": 0,
+  "all_original_input_token_ids_identical": true,
+  "all_template_features_reproduced": true,
+  "five_original_A_seed_predictions_identical": true,
+  "encoder_frozen": true,
+  "ece_fixtures": true,
+  "bootstrap_f1_checks": 50
+}

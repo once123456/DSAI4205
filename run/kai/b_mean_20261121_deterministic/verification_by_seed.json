@@ -1,0 +1,47 @@
+[
+  {
+    "seed": 13,
+    "base_weights_sha256_unchanged": true,
+    "base_sha256": "8d5be3b7368a42ac045bc7a8ed47e75d8372b503a9f9ef16023ce6107d899850",
+    "changed_adapter_tensors": 224,
+    "selected_checkpoint_validation_reproduced": true,
+    "encoder_frozen_for_MLP": true,
+    "mean_validation_cosine_to_A": 0.9894688129425049
+  },
+  {
+    "seed": 42,
+    "base_weights_sha256_unchanged": true,
+    "base_sha256": "8d5be3b7368a42ac045bc7a8ed47e75d8372b503a9f9ef16023ce6107d899850",
+    "changed_adapter_tensors": 224,
+    "selected_checkpoint_validation_reproduced": true,
+    "encoder_frozen_for_MLP": true,
+    "mean_validation_cosine_to_A": 0.6959988474845886
+  },
+  {
+    "seed": 71,
+    "base_weights_sha256_unchanged": true,
+    "base_sha256": "8d5be3b7368a42ac045bc7a8ed47e75d8372b503a9f9ef16023ce6107d899850",
+    "changed_adapter_tensors": 224,
+    "selected_checkpoint_validation_reproduced": true,
+    "encoder_frozen_for_MLP": true,
+    "mean_validation_cosine_to_A": 0.9770495295524597
+  },
+  {
+    "seed": 101,
+    "base_weights_sha256_unchanged": true,
+    "base_sha256": "8d5be3b7368a42ac045bc7a8ed47e75d8372b503a9f9ef16023ce6107d899850",
+    "changed_adapter_tensors": 224,
+    "selected_checkpoint_validation_reproduced": true,
+    "encoder_frozen_for_MLP": true,
+    "mean_validation_cosine_to_A": 0.9916865825653076
+  },
+  {
+    "seed": 2026,
+    "base_weights_sha256_unchanged": true,
+    "base_sha256": "8d5be3b7368a42ac045bc7a8ed47e75d8372b503a9f9ef16023ce6107d899850",
+    "changed_adapter_tensors": 224,
+    "selected_checkpoint_validation_reproduced": true,
+    "encoder_frozen_for_MLP": true,
+    "mean_validation_cosine_to_A": 0.8364435434341431
+  }
+]

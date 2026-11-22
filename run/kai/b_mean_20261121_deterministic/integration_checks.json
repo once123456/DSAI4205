@@ -1,0 +1,16 @@
+{
+  "comment_boundaries_match_prior_all_rows": 988,
+  "nonzero_lora_gradient": 4865.239740371704,
+  "temporary_head_gradient": true,
+  "frozen_base_no_gradients": true,
+  "adapter_weights_updated": true,
+  "probe_seed": 99991,
+  "probe_training_rows": [
+    "train_0",
+    "train_1",
+    "train_2",
+    "train_4"
+  ],
+  "probe_discarded": true,
+  "seconds": 1.2346919127739966
+}

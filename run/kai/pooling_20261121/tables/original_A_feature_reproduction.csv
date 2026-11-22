@@ -1,0 +1,4 @@
+partition,max_absolute_feature_difference,mean_absolute_feature_difference,allclose_atol_1e_6
+train,0.0,0.0,True
+validation,0.0,0.0,True
+test,0.0,0.0,True

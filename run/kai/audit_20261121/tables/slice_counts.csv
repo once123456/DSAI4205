@@ -1,0 +1,16 @@
+partition,slice,n
+test,negation,96
+test,contrast,47
+test,comparison,10
+test,sarcasm_candidate,12
+test,neutral_irrelevant_gold,171
+train,negation,106
+train,contrast,51
+train,comparison,20
+train,sarcasm_candidate,17
+train,neutral_irrelevant_gold,201
+validation,negation,27
+validation,contrast,9
+validation,comparison,5
+validation,sarcasm_candidate,2
+validation,neutral_irrelevant_gold,51

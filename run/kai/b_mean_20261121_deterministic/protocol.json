@@ -1,0 +1,87 @@
+{
+  "started_at_utc": "2026-11-21T11:24:31.440333+00:00",
+  "seeds": [
+    13,
+    42,
+    71,
+    101,
+    2026
+  ],
+  "model": {
+    "id": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca"
+  },
+  "mlp": {
+    "hidden": 128,
+    "max_epochs": 200,
+    "patience": 20,
+    "batch_size": 32,
+    "alpha": 0.01,
+    "learning_rate": 0.001
+  },
+  "adaptation": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "lora_lr": 0.0002,
+    "head_lr": 0.001,
+    "weight_decay": 0.01,
+    "micro_batch_size": 8,
+    "effective_batch_size": 32,
+    "max_epochs": 15,
+    "patience": 4,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "loss": "four-class unweighted cross entropy",
+    "temporary_head": "Linear(1024,4), on raw comment mean (before L2); FP32 logits",
+    "final_embedding": "comment mean, then L2 normalization, identical to A_mean",
+    "optimizer": "AdamW, betas=(0.9,0.999), eps=1e-8; linear warmup and linear decay",
+    "checkpoint_selection": "highest validation temporary-head macro-F1; first checkpoint wins ties; no untrained epoch0 eligibility",
+    "base_frozen": true,
+    "gradient_checkpointing": false
+  },
+  "input": "identical full A classification chat; empty thinking template retained",
+  "pooling": "arithmetic mean of final-layer comment-only token hidden states",
+  "max_length": 512,
+  "dtype": "BF16 base + FP32 trainable LoRA/temporary head, autocast BF16 transformer",
+  "main_comparison": "B_mean frozen adapted encoder + independent MLP versus A_mean + same independent MLP",
+  "temporary_head_test": "diagnostic only, scored after all checkpoints/MLPs fixed; never used as final B",
+  "versions": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "determinism": "torch.use_deterministic_algorithms(True, warn_only=False); CUBLAS_WORKSPACE_CONFIG=:4096:8; TF32 off",
+  "seed_scope": "Each B seed independently initializes LoRA, temporary head, training shuffle and final MLP; A varies final MLP only.",
+  "test_reuse": "Exploratory, previously inspected test set. No test-driven hyperparameter changes.",
+  "source_sha256": "06d337a279e1ae85d31c33cd86e460939990fbf4d5b149e74002bfed1d2940d4",
+  "split_hash": "e7fc1c5525dc8d9316e755c67b47dbe574115ef68959f0f33ece2e732f1f5bfb",
+  "data_manifest": {
+    "train": {
+      "rows": 591,
+      "sha256": "11aa7ac2e7b57708c887b2f0d2499985475630bb7e5cc1e9f70e9822063befe4",
+      "source": "data/processed/train_cleaned.csv"
+    },
+    "test": {
+      "rows": 397,
+      "sha256": "d22b43f009059afb6f3399e520f8455292de47e199f32a90a8052d2bc140303b",
+      "source": "data/processed/test_cleaned.csv"
+    }
+  },
+  "A_feature_file_sha256": {
+    "train": "618d8a49553f8357cb286c96c7acdfe877e92a0deadbb22b7cdea9696fca6e24",
+    "validation": "c49442960dc8596bac48e86d3f5685136e2cf5e03061d84fc8357fa1af643079",
+    "test": "6c454281ba2cad255625fc8b392bd4d0a2b3209972e5f53d7d260d2fb4f149d7"
+  }
+}

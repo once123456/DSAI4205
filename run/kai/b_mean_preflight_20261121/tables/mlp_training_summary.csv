@@ -1,0 +1,3 @@
+arm,seed,best_epoch,validation_macro_f1,training_seconds,hidden,max_epochs,patience,batch_size,alpha,learning_rate
+A_mean,13,1,0.44754440207234997,0.23501691035926342,128,200,20,32,0.01,0.001
+B_mean,13,2,0.45041920445146255,0.22729400219395757,128,200,20,32,0.01,0.001

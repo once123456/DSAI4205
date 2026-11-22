@@ -1,0 +1,2 @@
+seed,best_epoch,epochs_run,best_validation_macro_f1,epoch0_validation_macro_f1_not_selected,adapter_trainable_parameters,temporary_head_parameters,training_seconds,peak_training_allocated_MiB,optimizer_steps,zero_adapter_validation_maxdiff
+13,3,7,0.47859264918088446,0.25508785033432924,2293760,4100,48.83134419703856,5533.69970703125,105,0.0

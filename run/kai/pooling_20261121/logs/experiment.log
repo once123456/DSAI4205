@@ -1,0 +1,34 @@
+BOUNDARY_AND_POOLING_FIXTURES_PASS
+`torch_dtype` is deprecated! Use `dtype` instead!
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+EXTRACT train 473 max_abs_reproduction_diff 0.0
+EXTRACT validation 118 max_abs_reproduction_diff 0.0
+EXTRACT test 397 max_abs_reproduction_diff 0.0
+FIT template_last 13 19 0.4364952718676123
+FIT template_last 42 1 0.41565696571417393
+FIT template_last 71 2 0.45131005618621717
+FIT template_last 101 2 0.43914080394673916
+FIT template_last 2026 3 0.4408313275193138
+FIT comment_last 13 2 0.4652343607499978
+FIT comment_last 42 29 0.44926615527109504
+FIT comment_last 71 2 0.4051393105265368
+FIT comment_last 101 13 0.45256138247394573
+FIT comment_last 2026 2 0.4195376712328767
+FIT comment_mean 13 1 0.44754440207234997
+FIT comment_mean 42 2 0.4330537280701755
+FIT comment_mean 71 4 0.4726431498608918
+FIT comment_mean 101 13 0.4922426296265306
+FIT comment_mean 2026 1 0.41904166395393416
+RESULTS
+               accuracy_mean  accuracy_std  macro_f1_mean  macro_f1_std  weighted_f1_mean  weighted_f1_std  ece10_mean  ece10_std  ece15_mean  ece15_std  nll_mean   nll_std  brier_mean  brier_std
+pooling
+comment_last        0.448363      0.020386       0.422142      0.025320          0.444087         0.023166    0.233814   0.061398    0.235635   0.061910  1.603779  0.208181    0.757970   0.031372
+comment_mean        0.507809      0.016188       0.483768      0.021761          0.502060         0.018872    0.186066   0.026712    0.185146   0.027369  1.360849  0.066440    0.674842   0.014337
+template_last       0.506297      0.018510       0.462536      0.011350          0.493890         0.013573    0.189063   0.051572    0.189387   0.052264  1.432944  0.137513    0.687036   0.029911
+BOOTSTRAP
+   treatment       control  mean_delta_macro_f1    ci_low  ci_high  resamples
+comment_last template_last            -0.040394 -0.093138 0.003890       2000
+comment_mean template_last             0.021232 -0.023433 0.067691       2000
+comment_mean  comment_last             0.061626  0.020986 0.105614       2000
+VALIDATION_SELECTED comment_mean
+POOLING_EXPERIMENT_COMPLETE

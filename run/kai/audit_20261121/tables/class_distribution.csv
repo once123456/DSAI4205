@@ -1,0 +1,13 @@
+partition,label_id,label,n
+train,0,Negative,138
+train,1,Positive,134
+train,2,Irrelevant,80
+train,3,Neutral,121
+validation,0,Negative,36
+validation,1,Positive,31
+validation,2,Irrelevant,26
+validation,3,Neutral,25
+test,0,Negative,120
+test,1,Positive,106
+test,2,Irrelevant,66
+test,3,Neutral,105

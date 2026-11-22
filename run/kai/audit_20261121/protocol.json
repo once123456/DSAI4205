@@ -1,0 +1,80 @@
+{
+  "written_at_utc": "2026-11-21T10:39:10.020327+00:00",
+  "seeds": [
+    13,
+    42,
+    71,
+    101,
+    2026
+  ],
+  "fractions": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "mlp_grid": {
+    "original": {
+      "hidden": 128,
+      "max_epochs": 200,
+      "patience": 20,
+      "batch_size": 32,
+      "alpha": 0.01,
+      "learning_rate": 0.001
+    },
+    "small_reg": {
+      "hidden": 32,
+      "max_epochs": 200,
+      "patience": 20,
+      "batch_size": 32,
+      "alpha": 0.1,
+      "learning_rate": 0.001
+    },
+    "strong_reg": {
+      "hidden": 128,
+      "max_epochs": 200,
+      "patience": 20,
+      "batch_size": 32,
+      "alpha": 1.0,
+      "learning_rate": 0.0003
+    },
+    "small_slow": {
+      "hidden": 32,
+      "max_epochs": 200,
+      "patience": 20,
+      "batch_size": 32,
+      "alpha": 1.0,
+      "learning_rate": 0.0003
+    }
+  },
+  "baseline": {
+    "ngrams": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "sublinear_tf": true,
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "class_weight": null
+  },
+  "primary": [
+    "LR",
+    "A",
+    "E"
+  ],
+  "secondary": [
+    "LR_raw",
+    "A_tuned",
+    "E_tuned"
+  ],
+  "selection": "MLP epoch by validation macro-F1; configuration by mean validation macro-F1 over five seeds; never best test seed",
+  "learning_curve": "fixed validation/test; nested class-stratified group subsets; original hyperparameters; five subset/head seeds",
+  "calibration": "top-label equal-width ECE10 primary, ECE15 sensitivity; temperature fitted only on validation NLL; exploratory calibrated variant",
+  "bootstrap": "2000 paired hierarchical draws: shared seeds and class-stratified test rows",
+  "split_hash": "e7fc1c5525dc8d9316e755c67b47dbe574115ef68959f0f33ece2e732f1f5bfb",
+  "test_reuse": "Existing test already inspected in prior work. New comparisons are exploratory, not a fresh confirmatory holdout.",
+  "code_sha256": "639d77b1db69641612095eb8e676d7890571614790283261cf966853fdab2494"
+}

@@ -1,0 +1,14 @@
+RUN_DIR: /workspace/DSAI4205/group project/runs/kai/qwen_frozen_ae_runs/20261121T101025_214748Z
+`torch_dtype` is deprecated! Use `dtype` instead!
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+A train (473, 1024) extracted
+A validation (118, 1024) extracted
+A test (397, 1024) extracted
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+E train (473, 1024) extracted
+E validation (118, 1024) extracted
+E test (397, 1024) extracted
+arm  seed  test_macro_f1  test_accuracy
+  A    42       0.467849       0.528967
+  E    42       0.478327       0.506297
+RESULTS: /workspace/DSAI4205/group project/runs/kai/qwen_frozen_ae_runs/20261121T101025_214748Z
