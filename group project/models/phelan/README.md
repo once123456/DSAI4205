@@ -1,4 +1,7 @@
-# Phelan（庞智瀚）· BERT（冻结嵌入）+ MLP 分类器
+# 庞智瀚（Phelan）· 冻结 BERT + XGBoost
+
+**22 November model decision.** XGBoost is the adopted classifier (test macro-F1 0.5217, accuracy 0.5441). The MLP is the historical comparator. [Final method, parameters and metrics](../../runs/phelan/20261122_boosted_trees/TEAM_RESULTS_EN.md).
+
 
 英文团队说明与报告可用内容：[Frozen BERT and MLP model documentation](TEAM_REPORT_EN.md)。
 

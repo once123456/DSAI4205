@@ -1,4 +1,7 @@
-# Frozen BERT Embeddings with an Independent MLP Classifier
+# Frozen BERT with an Independent XGBoost Classifier
+
+**22 November model decision.** XGBoost is the adopted classifier (test macro-F1 0.5217, accuracy 0.5441). The MLP is the historical comparator. [Final method, parameters and metrics](../../runs/phelan/20261122_boosted_trees/TEAM_RESULTS_EN.md).
+
 
 **Contributor:** Phelan (庞智瀚)  
 **Project:** DSAI4205 Big Data Analytics, Twitter sentiment classification  
