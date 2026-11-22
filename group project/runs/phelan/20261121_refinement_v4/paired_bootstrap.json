@@ -1,0 +1,37 @@
+{
+  "replicates": 5000,
+  "seed": 42,
+  "sampling": "paired non-stratified row bootstrap",
+  "comparison": "selected minus original",
+  "caveat": "Conditional on fixed models; excludes selection, training-seed and prior test-use uncertainty.",
+  "metrics": {
+    "macro_f1": {
+      "observed_delta": 0.01279238877461808,
+      "ci_95_percentile": [
+        -0.012956639075276126,
+        0.03829224740198318
+      ]
+    },
+    "irrelevant_f1": {
+      "observed_delta": 0.03217697335344394,
+      "ci_95_percentile": [
+        -0.020412436380691793,
+        0.08947180479095371
+      ]
+    },
+    "neutral_f1": {
+      "observed_delta": 0.0049823207971713135,
+      "ci_95_percentile": [
+        -0.04275226806828243,
+        0.049046758238804264
+      ]
+    },
+    "accuracy": {
+      "observed_delta": 0.007556675062972307,
+      "ci_95_percentile": [
+        -0.015113350125944613,
+        0.030226700251889227
+      ]
+    }
+  }
+}

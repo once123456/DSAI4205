@@ -1,0 +1,9 @@
+row_id,observation
+train_473,Unclear syntax obscures the relation between entities.
+train_590,A foreign article remains.
+train_580,The product noun changes.
+train_470,Word order changes.
+train_529,Reward wording changes while amounts and account reference are preserved.
+train_499,"The invitation and account reference survive, with less idiomatic wording."
+train_487,Verb tense changes.
+train_480,The object noun changes.

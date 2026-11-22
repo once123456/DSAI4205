@@ -1,0 +1,15 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.1",
+    "scikit-learn": "1.6.1",
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "vaderSentiment": "3.3.2",
+    "ftfy": "6.3.1",
+    "sentencepiece": "0.2.1",
+    "sacremoses": "0.1.1"
+  }
+}

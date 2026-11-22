@@ -1,0 +1,15 @@
+{
+  "shortlist": [
+    "no_surface",
+    "style",
+    "neutral_repeat"
+  ],
+  "challenger": "no_surface",
+  "validation_gate_pass": false,
+  "primary": "published_v4",
+  "validation_gate": {
+    "macro_f1": 0.5118367346938775,
+    "irrelevant_f1": 0.3673469387755102,
+    "neutral_f1": 0.5238095238095238
+  }
+}

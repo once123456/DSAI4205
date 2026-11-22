@@ -59,3 +59,14 @@ tfidf_runs/
 
 # Local Yuchen training outputs (checkpoints and embedding matrices)
 bilstm_outputs/
+
+# Local Phelan experiment outputs; checked-in runs are curated records.
+*.whl
+/group project/runs/phelan/*/*.ubj
+/group project/runs/phelan/*/lightgbm.txt
+/group project/runs/phelan/*/export/
+/group project/runs/phelan/*/translation_audit.csv
+/group project/runs/phelan/*/translation_spot_check.csv
+!/group project/runs/phelan/20261121_transfer_study/translation_audit.csv
+!/group project/runs/phelan/20261121_transfer_study/translation_spot_check.csv
+/group project/fig/zhihan/
