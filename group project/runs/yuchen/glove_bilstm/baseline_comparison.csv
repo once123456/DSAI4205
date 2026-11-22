@@ -1,0 +1,3 @@
+model,accuracy,P,R,F1
+Recorded TF-IDF + LR baseline,0.5063,0.533,0.4693,0.4662
+glove-twitter-50 + BiLSTM (selected duration),0.461,0.4505,0.4378,0.4371

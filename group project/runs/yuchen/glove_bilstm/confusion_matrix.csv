@@ -1,0 +1,9 @@
+split,actual,Negative,Positive,Irrelevant,Neutral
+validation,Negative,17,10,5,4
+validation,Positive,2,21,3,5
+validation,Irrelevant,8,5,6,7
+validation,Neutral,3,5,0,17
+test,Negative,64,26,22,8
+test,Positive,19,62,16,9
+test,Irrelevant,19,20,16,11
+test,Neutral,22,25,17,41

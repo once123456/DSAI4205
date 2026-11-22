@@ -1,0 +1,5 @@
+model,hidden,dropout,finetune,best_epoch,validation_macro_f1
+BiLSTM,16,0.4,False,12,0.4134071810542399
+BiLSTM,16,0.4,True,12,0.4037367292631397
+BiLSTM,48,0.4,False,12,0.468524531024531
+BiLSTM,48,0.4,True,12,0.4528769513548311

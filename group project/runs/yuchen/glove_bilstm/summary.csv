@@ -1,0 +1,5 @@
+split,average,accuracy,precision,recall,f1,n
+validation,macro,0.5169,0.5056,0.5151,0.4962,118
+validation,weighted,0.5169,0.511,0.5169,0.5007,118
+test,macro,0.461,0.4505,0.4378,0.4371,397
+test,weighted,0.461,0.4751,0.461,0.4606,397

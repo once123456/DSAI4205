@@ -1,0 +1,9 @@
+split,label_id,label,TP,FP,FN,TN,support
+validation,0,Negative,17,13,19,69,36
+validation,1,Positive,21,20,10,67,31
+validation,2,Irrelevant,6,8,20,84,26
+validation,3,Neutral,17,16,8,77,25
+test,0,Negative,64,60,56,217,120
+test,1,Positive,62,71,44,220,106
+test,2,Irrelevant,16,55,50,276,66
+test,3,Neutral,41,28,64,264,105

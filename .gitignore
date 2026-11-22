@@ -56,3 +56,6 @@ private_features/
 **/runs/kun/abcd_reproduction/
 tfidf_runs/
 **/runs/kun/abcd_train_only_20261121/oof_predictions.csv
+
+# Local Yuchen training outputs (checkpoints and embedding matrices)
+bilstm_outputs/

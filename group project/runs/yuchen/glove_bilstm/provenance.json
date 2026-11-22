@@ -1,0 +1,49 @@
+{
+  "contributor": "Yuchen Gu",
+  "source_commit": "22eb62943cce41a5041660db7d0a117b7a393e3d",
+  "source_path": "group project/notebooks/yuchen/GloVe_BiLSTM.ipynb",
+  "source_notebook_sha256": "2d673bebfbb7edc8b0d16eff2659f43f493770594de71ab4226fc3e83b157e09",
+  "source_run": "20261121T165235_181853Z",
+  "zero_based_source_cells": {
+    "config.json": [
+      2,
+      7,
+      17,
+      24
+    ],
+    "epoch_log.csv": [
+      17,
+      22
+    ],
+    "summary.csv": [
+      20,
+      26
+    ],
+    "per_class.csv": [
+      20,
+      26
+    ],
+    "class_counts.csv": [
+      20,
+      26
+    ],
+    "confusion_matrix.csv": [
+      20,
+      26
+    ],
+    "baseline_comparison.csv": [
+      28
+    ],
+    "validation_search.csv": [
+      30
+    ],
+    "historical_runs.csv": [
+      30
+    ],
+    "error_examples.csv": [
+      32
+    ]
+  },
+  "precision": "Evaluation and baseline tables use the displayed precision. Integer counts are exact. The epoch log contains the printed fields only; blank fields were not printed in that phase. Historical runs and validation trials preserve numeric literals from the source cell.",
+  "protocol": "One seed. The 397-row test set had been inspected during development. The 6 displayed error examples are a subset; complete row predictions and checkpoints were not supplied."
+}
