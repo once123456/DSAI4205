@@ -17,4 +17,4 @@
 
 发布核验：以匿名身份下载固定版本的 50 个文件并校验哈希。用归档分类头、特征和原版 NumPy / scikit-learn 在 CPU 上重放 A_mean 和 B_mean，五种子 × 三个划分 × 两种方法共 9,880 个预测标签及行 ID 全部匹配。这项检查复用了已提取的特征。
 
-[早期标签微调、解释蒸馏与反事实实验摘要](../../group%20project/runs/kai/) · [全组实验日志 Notebook](../../submission/02_Experiment_Log.ipynb)
+[早期标签微调、解释蒸馏与反事实实验摘要](../../runs/kai/) · [全组实验日志 Notebook](../../../submission/02_Experiment_Log.ipynb)
