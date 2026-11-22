@@ -1,0 +1,16 @@
+{
+  "comparison": "tree minus MLP v4 in test macro-F1",
+  "draws": 5000,
+  "seed": 42,
+  "method": "paired non-stratified percentile bootstrap for fixed predictions",
+  "intervals": {
+    "XGBoost": [
+      -0.02030031705696261,
+      0.06938572690385038
+    ],
+    "LightGBM": [
+      -0.032652330000648634,
+      0.052457617044203285
+    ]
+  }
+}

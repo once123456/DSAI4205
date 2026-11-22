@@ -1,0 +1,58 @@
+{
+  "split_sizes": [
+    473,
+    118,
+    397
+  ],
+  "features": "Cached 768 mean-pooled frozen BERT features and four train-standardized surface counts",
+  "feature_sha256": "81f7263964656fb646259063514774ced59b5355e7ac389e87f9364e3cec7ef3",
+  "class_weights": [
+    0.8568840579710145,
+    0.8824626865671642,
+    1.84765625,
+    0.7329545454545454
+  ],
+  "seed": 42,
+  "axes": {
+    "max_depth": [
+      3,
+      4,
+      5
+    ],
+    "learning_rate": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "subsample": [
+      0.8,
+      1.0
+    ],
+    "colsample_bytree": [
+      0.8,
+      1.0
+    ],
+    "min_child_weight": [
+      1,
+      3
+    ],
+    "reg_lambda": [
+      1,
+      10
+    ]
+  },
+  "n_estimators": [
+    100,
+    200,
+    300
+  ],
+  "max_bin": 32,
+  "n_threads_per_fit": 3,
+  "validation_rule": "maximize unweighted validation macro-F1 within each family; ties: fewer rounds, then declared grid order",
+  "test_decision": "Adopt XGBoost if its locked test macro-F1 reaches 0.4971. LightGBM is a comparator.",
+  "versions": {
+    "xgboost": "3.0.2",
+    "lightgbm": "4.6.0",
+    "sklearn": "1.6.1"
+  }
+}

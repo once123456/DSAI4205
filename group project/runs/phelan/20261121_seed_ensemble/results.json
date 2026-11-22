@@ -1,0 +1,86 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "class_multipliers": [
+    1.0,
+    1.0,
+    1.25,
+    0.75
+  ],
+  "per_seed": {
+    "42": {
+      "val_macro_f1": 0.511837,
+      "test_macro_f1": 0.497059,
+      "test_acc": 0.511335,
+      "per_class": {
+        "Negative": 0.591667,
+        "Positive": 0.53211,
+        "Irrelevant": 0.339869,
+        "Neutral": 0.52459
+      }
+    },
+    "43": {
+      "val_macro_f1": 0.499122,
+      "test_macro_f1": 0.479267,
+      "test_acc": 0.493703,
+      "per_class": {
+        "Negative": 0.581673,
+        "Positive": 0.516129,
+        "Irrelevant": 0.352201,
+        "Neutral": 0.467066
+      }
+    },
+    "44": {
+      "val_macro_f1": 0.503667,
+      "test_macro_f1": 0.48542,
+      "test_acc": 0.498741,
+      "per_class": {
+        "Negative": 0.572614,
+        "Positive": 0.546296,
+        "Irrelevant": 0.339623,
+        "Neutral": 0.483146
+      }
+    },
+    "45": {
+      "val_macro_f1": 0.495405,
+      "test_macro_f1": 0.462243,
+      "test_acc": 0.478589,
+      "per_class": {
+        "Negative": 0.598361,
+        "Positive": 0.515837,
+        "Irrelevant": 0.329545,
+        "Neutral": 0.405229
+      }
+    },
+    "46": {
+      "val_macro_f1": 0.504078,
+      "test_macro_f1": 0.472246,
+      "test_acc": 0.488665,
+      "per_class": {
+        "Negative": 0.579365,
+        "Positive": 0.518519,
+        "Irrelevant": 0.320513,
+        "Neutral": 0.470588
+      }
+    }
+  },
+  "ensemble_test": {
+    "accuracy": 0.5113350125944585,
+    "macro_f1": 0.497341019821684,
+    "per_class": {
+      "Negative": 0.5877551020408164,
+      "Positive": 0.5462962962962963,
+      "Irrelevant": 0.34394904458598724,
+      "Neutral": 0.5113636363636364
+    }
+  },
+  "environment": {
+    "torch": "2.6.0+cu124",
+    "device": "cuda"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "models": {
+    "control": [
+      "base",
+      "surface",
+      "none"
+    ],
+    "no_surface": [
+      "base",
+      "none",
+      "none"
+    ],
+    "style": [
+      "base",
+      "style",
+      "none"
+    ],
+    "lexicon": [
+      "base",
+      "lexicon",
+      "none"
+    ],
+    "style_lexicon": [
+      "base",
+      "all",
+      "none"
+    ],
+    "last_four": [
+      "last4",
+      "all",
+      "none"
+    ],
+    "sst_surface": [
+      "sst",
+      "surface",
+      "none"
+    ],
+    "sst_all": [
+      "sst",
+      "all",
+      "none"
+    ],
+    "dual": [
+      "dual",
+      "all",
+      "none"
+    ],
+    "neutral_repeat": [
+      "dual",
+      "all",
+      "repeat"
+    ],
+    "neutral_translate": [
+      "dual",
+      "all",
+      "translate"
+    ]
+  },
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "folds": 4,
+  "fold_seed": 1205,
+  "epochs": 36,
+  "gate": {
+    "macro_f1": 0.5118367346938775,
+    "irrelevant_f1": 0.3673469387755102,
+    "neutral_f1": 0.5238095238095238
+  },
+  "optimizer": "full batch Adam lr=0.001 decay=0.0001",
+  "weight_multipliers": [
+    1,
+    1,
+    1.25,
+    0.75
+  ],
+  "shortlist": "top 3 alternatives: both OOF target F1s >= control first, then largest OOF macro-F1; ties use declaration order",
+  "selection": "all 3 official-validation metrics >= v4; rank by validation macro-F1 then shortlist order; if none passes, characterize top finalist and retain v4",
+  "checkpoints": {
+    "base": [
+      "google-bert/bert-base-uncased",
+      "86b5e0934494bd15c9632b12f734a8a67f723594"
+    ],
+    "sst": [
+      "textattack/bert-base-uncased-SST-2",
+      "95f0f6f859b35c8ff0863ae3cd4e2dbc702c0ae2"
+    ],
+    "en_fr": [
+      "Helsinki-NLP/opus-mt-en-fr",
+      "dd7f6540a7a48a7f4db59e5c0b9c42c8eea67f18"
+    ],
+    "fr_en": [
+      "Helsinki-NLP/opus-mt-fr-en",
+      "c4aed37b318c763fd177aa449b44e3b783cc6c02"
+    ]
+  }
+}

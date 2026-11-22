@@ -20,3 +20,7 @@ qwen_lora_runs/
 qwen_distillation_runs/
 *.safetensors
 *.zip
+*.whl
+*.pt
+*.npz
+*.npy
