@@ -35,20 +35,8 @@ def code(source, name, **metadata):
     add("code", source, name, **metadata)
 
 
-payload, manifest = {}, {}
-for split in ("train", "test"):
-    path = BASE / "data" / "processed" / f"{split}_cleaned.csv"
-    with path.open(encoding="utf-8-sig", newline="") as f:
-        rows = list(csv.DictReader(f))
-    buffer = io.StringIO(newline="")
-    columns = ["row_id", "Phrase", "Sentiment", "text_clean", "cross_split_overlap"]
-    writer = csv.DictWriter(buffer, fieldnames=columns, lineterminator="\n")
-    writer.writeheader()
-    writer.writerows({k: row[k] for k in columns} for row in rows)
-    raw = buffer.getvalue().encode("utf-8")
-    payload[split] = base64.b64encode(gzip.compress(raw, mtime=0)).decode("ascii")
-    manifest[split] = {"rows": len(rows), "sha256": hashlib.sha256(raw).hexdigest(),
-                       "source": f"data/processed/{split}_cleaned.csv"}
+manifest = {'train': {'rows': 591, 'sha256': '11aa7ac2e7b57708c887b2f0d2499985475630bb7e5cc1e9f70e9822063befe4', 'source': 'data/processed/train_cleaned.csv'}, 'test': {'rows': 397, 'sha256': 'd22b43f009059afb6f3399e520f8455292de47e199f32a90a8052d2bc140303b', 'source': 'data/processed/test_cleaned.csv'}}
+loader = (BASE / 'models/kai/local_data.py').read_text(encoding='utf-8')
 
 md('''
 # Qwen3-0.6B + LoRA：Twitter 四分类原始标签微调
@@ -64,7 +52,7 @@ md('''
 3. 从安装依赖单元开始按顺序运行。首次需联网下载公开模型，无需 Hugging Face token。
 4. 最后下载 ZIP，里面包含 LoRA adapter、tokenizer、配置、划分清单、预测和评估结果。
 
-Notebook 已内嵌本项目数据快照：**591 条训练池样本、397 条测试样本**。
+从 DSAI4205_DATA_DIR 或项目 data/processed 读取快照：**591 条训练池样本、397 条测试样本**。
 使用现有清理流程确定的行与标签，但模型输入取 `Phrase` 原文并轻度修复编码，
 保留大小写、标点、emoji 和账号。
 原始训练 CSV 的 596 条经过既有去重和跨集重复处理得到 591 条，此处不会重新改标签。
@@ -226,7 +214,7 @@ md('''
 这只防护精确重复，不代表已解决所有近似改写重复。
 后续解释与反事实版本必须复用导出的 `split_manifest.csv`，且只能增强 train 行。
 ''', "data-note")
-code("EMBEDDED_DATA = " + repr(payload) + "\nDATA_MANIFEST = " + repr(manifest),
+code(loader + "\nDATA_MANIFEST = " + repr(manifest) + "\nimport base64, gzip\nEMBEDDED_DATA = {key: base64.b64encode(gzip.compress(read_projected_data(key, DATA_MANIFEST))).decode() for key in DATA_MANIFEST}",
      "embedded-data", cellView="form")
 code(r'''
 LABEL_NAMES = ["Negative", "Positive", "Irrelevant", "Neutral"]

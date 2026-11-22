@@ -20,3 +20,39 @@ qwen_lora_runs/
 qwen_distillation_runs/
 *.safetensors
 *.zip
+
+# Private course material; keep split manifests and aggregate metrics.
+/group project/Data 5 - Twitter/testdata.csv
+/group project/Data 5 - Twitter/traindata.csv
+/group project/Data 5 - Twitter/Twitter Sentiment Analysis Dataset.docx
+/group project/Project description (1).pdf
+/group project/reports/kai/Kai_Method_Overview.pptx
+/group project/data/processed/train_cleaned.csv
+/group project/data/processed/test_cleaned.csv
+/group project/data/processed/removed_rows.csv
+/group project/reports/class_samples.csv
+/group project/reports/cleaning_examples.csv
+/group project/reports/long_tweets.csv
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+*.joblib
+*.pkl
+*.npz
+*.npy
+*.bin
+*.onnx
+*.gguf
+*.h5
+.cache/
+.ipython/
+wandb/
+**/runs/kai/vast*/
+qwen_frozen_ae_runs/
+private_models/
+private_features/
+**/runs/kun/elmo_textcnn/resources/
+**/runs/kun/abcd_reproduction/
+tfidf_runs/
+**/runs/kun/abcd_train_only_20261121/oof_predictions.csv

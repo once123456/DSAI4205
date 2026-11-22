@@ -1,0 +1,19 @@
+{
+  "B1": {
+    "input": "text",
+    "features": "char 2-5",
+    "min_df": 1,
+    "C": 2.0,
+    "class_weight": "balanced"
+  },
+  "B1_cv_macro_f1": 0.44984784218175355,
+  "B1_cv_std": 0.02772145353701929,
+  "B0_cv_macro_f1": 0.400112855077078,
+  "B0_cv_std": 0.041816374343405883,
+  "configurations": 320,
+  "B0_single_split_20_seeds": {
+    "mean": 0.40453231891950947,
+    "min": 0.3808089978557465,
+    "max": 0.4225329878944712
+  }
+}

@@ -19,8 +19,8 @@ LABEL_IDS = list(range(len(LABEL_NAMES)))
 
 
 def read_snapshot(name):
-    raw = gzip.decompress(base64.b64decode(SNAPSHOT[name]))
-    return pd.read_csv(io.BytesIO(raw), keep_default_na=False)
+    names = {"train": "train_cleaned.csv", "test": "test_cleaned.csv", "split": "split_manifest.csv"}
+    return pd.read_csv(DATA_DIR / names[name], keep_default_na=False)
 
 
 pool = read_snapshot("train")

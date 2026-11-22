@@ -1,0 +1,8 @@
+{
+  "contributor": "Huakun Huang",
+  "attachment": "Huakun_Huang_ELMo_ABCD_Report.ipynb",
+  "sha256": "7edf7774caa24dd2fea4fda6c1dac7a1000219a790cd7cf12d5b61d41e347448",
+  "table_source": "Rendered HTML at original displayed precision (cells 14 and 17, zero-indexed).",
+  "figures_source": "Embedded PNG outputs in cells 16 and 17.",
+  "audit_source": "Author-saved output in cell 17. No checkpoints or row-level predictions supplied."
+}

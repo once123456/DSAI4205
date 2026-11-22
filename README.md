@@ -1,6 +1,6 @@
 # DSAI4205 · Twitter 情感分类小组项目
 
-本项目为 DSAI4205 Big Data Analytics 课程开发英文推文分类系统。输入是一条推文，输出是 Negative（0）、Positive（1）、Irrelevant（2）或 Neutral（3）。原始文件提供推文正文和人工标签，涉及的品牌或账号出现在正文中。小组使用同一份测试集比较模型，分析哪些类别容易混淆，以及分类结果能为解读用户反馈提供什么依据。[课程项目说明](group%20project/Project%20description%20%281%29.pdf)
+本项目为 DSAI4205 Big Data Analytics 课程开发英文推文分类系统。输入是一条推文，输出是 Negative（0）、Positive（1）、Irrelevant（2）或 Neutral（3）。原始文件提供推文正文和人工标签，涉及的品牌或账号出现在正文中。小组使用同一份测试集比较模型，分析哪些类别容易混淆，以及分类结果能为解读用户反馈提供什么依据。
 
 ## 项目范围与交付
 
@@ -13,7 +13,7 @@
 
 ## 数据与评估
 
-原始数据含 596 条训练推文和 397 条测试推文。训练池中有一句重复五次，按多数标签保留一条。另有一句同时出现在训练集和测试集，从训练池移除后保留带标记的测试行。清理后训练池有 **591 条**，测试集有 **397 条**。[原始数据](group%20project/Data%205%20-%20Twitter/) · [数据清理记录](group%20project/reports/数据清理与分析.md)
+原始数据含 596 条训练推文和 397 条测试推文。训练池中有一句重复五次，按多数标签保留一条。另有一句同时出现在训练集和测试集，从训练池移除后保留带标记的测试行。清理后训练池有 **591 条**，测试集有 **397 条**。[数据清理记录](group%20project/reports/数据清理与分析.md)
 
 固定划分从训练池中取 **473 条训练、118 条验证**，相同的标准化文本归入同一子集。需要选参数的模型使用验证集，最终在同一批 397 条推文上评估。主要比较 macro-F1，使四个类别的 F1 各占相同权重，同时报告准确率和逐类指标。[划分清单](group%20project/data/processed/split_manifest.csv) · [探索性分析报告](group%20project/reports/Twitter情感数据技术分析报告.md) · [图表](group%20project/figures/)
 
@@ -35,3 +35,7 @@
 | 成员 | 模型目录与 README | Notebook |
 |---|---|---|
 | Kai | [models/kai/](group%20project/models/kai/) | [notebooks/kai/Kai_Sentiment_Experiments.ipynb](group%20project/notebooks/kai/Kai_Sentiment_Experiments.ipynb) |
+| Huakun Huang | [models/kun/](group%20project/models/kun/) | [Notebook](group%20project/notebooks/kun/Huakun_Huang_ELMo_ABCD_Report.ipynb) |
+| Jingwen Yang | [models/jingwen/](group%20project/models/jingwen/) | [Notebook](group%20project/notebooks/jingwen/Jingwen_MultiView_SVM.ipynb) |
+
+课程数据由组员从课程平台取得。在 group project 目录下将 traindata.csv 和 testdata.csv 放入 Data 5 - Twitter，再运行 python scripts/clean_and_analyze.py。也可以直接将组内授权的 train_cleaned.csv 和 test_cleaned.csv 放入 data/processed，配合仓库中的 split_manifest.csv 使用。在 Colab 单独打开 Kai 或共享基线 Notebook 时，将 DSAI4205_DATA_DIR 环境变量设为这些 CSV 所在目录。Kun 的归档结果展示可离线运行。

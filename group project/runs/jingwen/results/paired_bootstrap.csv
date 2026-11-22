@@ -1,0 +1,7 @@
+treatment,control,delta_macro_f1,delta_ci_low,delta_ci_high,resamples
+L1 bge-large + SVM,L0 TF-IDF + LR (shared baseline),0.09211917808096298,0.0384941013233362,0.14535293059460508,1000
+L2 e5-instruct sentiment view + SVM,L0 TF-IDF + LR (shared baseline),0.07812836379945093,0.02396553715873174,0.13212032425990833,1000
+L3 three task views + multi-kernel SVM,L0 TF-IDF + LR (shared baseline),0.14418953747890856,0.08462566123219363,0.19817445942759115,1000
+L4 six views (prompt ensemble) + multi-kernel SVM,L0 TF-IDF + LR (shared baseline),0.13322861728051189,0.07885082567811516,0.18638659029577023,1000
+L4 refit on all 591 rows,"L0 TF-IDF + LR, 591 rows",0.13118808313283314,0.07432971902053634,0.1865726524269287,1000
+L4 six views (prompt ensemble) + multi-kernel SVM,L1 bge-large + SVM,0.0411094391995489,-0.00319441418216827,0.08476427431751715,1000

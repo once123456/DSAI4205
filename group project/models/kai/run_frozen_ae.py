@@ -59,9 +59,14 @@ def load_snapshot(notebook_path=None):
     values = {}
     for node in ast.parse(source).body:
         if isinstance(node, ast.Assign) and len(node.targets) == 1 and isinstance(node.targets[0], ast.Name):
-            if node.targets[0].id in {"EMBEDDED_DATA", "DATA_MANIFEST"}:
+            if node.targets[0].id == "DATA_MANIFEST" or (node.targets[0].id == "EMBEDDED_DATA" and isinstance(node.value, ast.Dict)):
                 values[node.targets[0].id] = ast.literal_eval(node.value)
-    payload, manifest = values["EMBEDDED_DATA"], values["DATA_MANIFEST"]
+    manifest = values["DATA_MANIFEST"]
+    if "EMBEDDED_DATA" not in values:
+        import runpy
+        reader = runpy.run_path(str(HERE / "local_data.py"))["read_projected_data"]
+        return {key: reader(key, manifest, PROJECT) for key in manifest}, manifest
+    payload = values["EMBEDDED_DATA"]
     raw = {k: gzip.decompress(base64.b64decode(payload[k])) for k in ("train", "test")}
     for k, data in raw.items():
         if hashlib.sha256(data).hexdigest() != manifest[k]["sha256"]:

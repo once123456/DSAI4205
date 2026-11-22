@@ -10,8 +10,12 @@ TF-IDF + 逻辑回归在 397 条测试推文上取得的 macro-F1 为 0.4461（4
 
 | 内容 | 位置 |
 |---|---|
-| 课程说明和原始数据 | [项目要求](Project%20description%20%281%29.pdf) · [Twitter 数据集](Data%205%20-%20Twitter/) |
+
 | 处理后的数据与固定划分 | [data/processed/](data/processed/) |
 | 共享清理和分析脚本 | [scripts/](scripts/) |
 | 分析报告与图表 | [reports/](reports/) · [figures/](figures/) |
 | Kai | [models/kai/](models/kai/) · [notebooks/kai/Kai_Sentiment_Experiments.ipynb](notebooks/kai/Kai_Sentiment_Experiments.ipynb) |
+| Huakun Huang | [models/kun/](models/kun/) | [Notebook](notebooks/kun/Huakun_Huang_ELMo_ABCD_Report.ipynb) |
+| Jingwen Yang | [models/jingwen/](models/jingwen/) | [Notebook](notebooks/jingwen/Jingwen_MultiView_SVM.ipynb) |
+
+课程数据由组员从课程平台取得。在 group project 目录下将 traindata.csv 和 testdata.csv 放入 Data 5 - Twitter，再运行 python scripts/clean_and_analyze.py。也可以直接将组内授权的 train_cleaned.csv 和 test_cleaned.csv 放入 data/processed，配合仓库中的 split_manifest.csv 使用。在 Colab 单独打开 Kai 或共享基线 Notebook 时，将 DSAI4205_DATA_DIR 环境变量设为这些 CSV 所在目录。Kun 的归档结果展示可离线运行。

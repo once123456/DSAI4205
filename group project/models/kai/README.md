@@ -4,7 +4,7 @@
 
 本实验研究在只有几百条标注推文时，教师模型提供的短解释和情感翻转样本能否改善 Qwen3-0.6B 的四分类表现。标签编码为 0（Negative）、1（Positive）、2（Irrelevant）、3（Neutral）。
 
-原来的三组实验用 Qwen 解码器对四个标签代码打分，改变训练监督。新增 `embedding-mlp` 模式将表示模型与分析模型分开：先适配并冻结 Qwen，提取上下文文本向量，再单独训练 MLP 分类器。五种表示设置共用同一种 MLP，属于一个分析模型的对照实验，不能计作五种不同分析模型。[课程建模要求](../../Project%20description%20%281%29.pdf)
+原来的三组实验用 Qwen 解码器对四个标签代码打分，改变训练监督。新增 `embedding-mlp` 模式将表示模型与分析模型分开：先适配并冻结 Qwen，提取上下文文本向量，再单独训练 MLP 分类器。五种表示设置共用同一种 MLP，属于一个分析模型的对照实验，不能计作五种不同分析模型。课程建模要求见课程平台上的项目说明。
 
 ## 在 Colab 运行
 
@@ -130,7 +130,6 @@ python models/kai/run_local.py --mode counterfactual --seeds 42,43,44 --distilla
 
 ## 方法汇报
 
-[方法说明 PPT（8 页）](../../reports/kai/Kai_Method_Overview.pptx)：介绍 Qwen 架构、教师监督、冻结向量与独立 MLP、五组对照及相关论文。新增五组实验尚未运行，PPT 不包含其性能结果。
 
 ## 修改和构建
 

@@ -4,7 +4,7 @@
 
 ## 数据和比较协议
 
-只读现有 notebook 中的内嵌数据字面量，检查原始 SHA-256，沿用相同清洗规则和 `StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)`。默认重建 473 train、118 validation、397 test；这是固定规则重建，不能声称恢复了已经丢失的教师缓存。若持有原 `split_manifest.csv`，可通过 `--split-manifest /path/to/split_manifest.csv` 指定并核验。每次保存划分清单和指纹。
+读取本地课程 CSV，按 notebook 的清单重建数据快照，检查原始 SHA-256，沿用相同清洗规则和 `StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)`。默认重建 473 train、118 validation、397 test；这是固定规则重建，不能声称恢复了已经丢失的教师缓存。若持有原 `split_manifest.csv`，可通过 `--split-manifest /path/to/split_manifest.csv` 指定并核验。每次保存划分清单和指纹。
 
 A 使用与原五组入口一致的分类 chat 提示，关闭 thinking，取生成答案前最后有效 token；E 使用官方 Instruct/Query 模板及最后有效 token。两者均为 1024 维并 L2 归一化。模板、预训练目标不同，因此是系统比较，不是单变量权重消融。
 

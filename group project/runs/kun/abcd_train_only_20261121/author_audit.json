@@ -1,0 +1,11 @@
+{
+  "all_150_fit_predictions_present": true,
+  "all_150_checkpoints_present": true,
+  "selection_grid_scores_recomputed": 2340,
+  "outer_rows_verified": 591,
+  "test_data_used": false,
+  "checks": [
+    "All 2340 inner-grid scores and all 591 outer predictions independently recomputed"
+  ],
+  "historical_design_exposure_disclosed": true
+}

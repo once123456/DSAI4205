@@ -1,0 +1,167 @@
+{
+  "tfidf_lr_reference": {
+    "val_macro_f1": 0.3909239404233843
+  },
+  "mpnet": {
+    "val_macro_f1": 0.5342833267361569,
+    "C": 4,
+    "standardize": false,
+    "dim": 768
+  },
+  "bge_large": {
+    "val_macro_f1": 0.5525000951159631,
+    "C": 4,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5_large": {
+    "val_macro_f1": 0.545239200256286,
+    "C": 1,
+    "standardize": false,
+    "dim": 1024
+  },
+  "mxbai_large": {
+    "val_macro_f1": 0.5359746702243602,
+    "C": 0.5,
+    "standardize": false,
+    "dim": 1024
+  },
+  "bertweet": {
+    "val_macro_f1": 0.5271188838262009,
+    "C": 4,
+    "standardize": false,
+    "dim": 768
+  },
+  "twitter_roberta": {
+    "val_macro_f1": 0.4376069668532724,
+    "C": 4,
+    "standardize": false,
+    "dim": 768
+  },
+  "modernbert_classification": {
+    "val_macro_f1": 0.5070498451096686,
+    "C": 2,
+    "standardize": false,
+    "dim": 768
+  },
+  "modernbert_clustering": {
+    "val_macro_f1": 0.526314372262861,
+    "C": 0.5,
+    "standardize": true,
+    "dim": 768
+  },
+  "gte_modernbert": {
+    "val_macro_f1": 0.5051462051462052,
+    "C": 2,
+    "standardize": false,
+    "dim": 768
+  },
+  "e5i_sentiment": {
+    "val_macro_f1": 0.5580496370259717,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_sentiment_last4": {
+    "val_macro_f1": 0.5528157349896481,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_topic": {
+    "val_macro_f1": 0.5236076930088415,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_topic_last4": {
+    "val_macro_f1": 0.4974201841333481,
+    "C": 16,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_emotion": {
+    "val_macro_f1": 0.4911616161616162,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_emotion_last4": {
+    "val_macro_f1": 0.5528670963453572,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_relevance": {
+    "val_macro_f1": 0.5382118405604976,
+    "C": 1,
+    "standardize": true,
+    "dim": 1024
+  },
+  "e5i_relevance_last4": {
+    "val_macro_f1": 0.5314442349326071,
+    "C": 16,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_style": {
+    "val_macro_f1": 0.4957604652950641,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_style_last4": {
+    "val_macro_f1": 0.5123909203320968,
+    "C": 1,
+    "standardize": true,
+    "dim": 1024
+  },
+  "e5i_sentiment_v2": {
+    "val_macro_f1": 0.528375350140056,
+    "C": 1,
+    "standardize": true,
+    "dim": 1024
+  },
+  "e5i_sentiment_v2_last4": {
+    "val_macro_f1": 0.5233403045903046,
+    "C": 16,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_topic_v2": {
+    "val_macro_f1": 0.5113678982602565,
+    "C": 4,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_topic_v2_last4": {
+    "val_macro_f1": 0.5434178743961353,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_style_v2": {
+    "val_macro_f1": 0.5182455799456718,
+    "C": 1,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_style_v2_last4": {
+    "val_macro_f1": 0.5287844048079882,
+    "C": 2,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_relevance_v2": {
+    "val_macro_f1": 0.550029729103686,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  },
+  "e5i_relevance_v2_last4": {
+    "val_macro_f1": 0.5270807101793017,
+    "C": 32,
+    "standardize": false,
+    "dim": 1024
+  }
+}
